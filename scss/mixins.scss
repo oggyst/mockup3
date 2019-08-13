@@ -1,18 +1,23 @@
-@mixin break-point($resolution) {
-  @media (max-width: $resolution) {
+@mixin break-point($resolution) 
+{
+  @media (max-width: $resolution) 
+  {
     @content;
   }
 }
-@mixin set-size($width, $height) {
+@mixin set-size($width, $height) 
+{
   width: $width;
   height: $height;
 }
-@mixin remove-default() {
+@mixin remove-default() 
+{
   text-decoration: none;
   padding: 0px;
   margin: 0px;
 }
-@mixin clearfix() {
+@mixin clearfix()
+{
   &::before,
   &::after {
     content: "";
@@ -20,18 +25,22 @@
     display: table;
   }
 }
-@mixin use-local-font($font, $filename) {
-  @font-face {
+@mixin use-local-font($font, $filename) 
+{
+  @font-face 
+   {
     font-family: $font;
     src: url("/font/"+$filename);
   }
 }
-@mixin vertical-holders() {
+@mixin vertical-holders() 
+{
   width: 23px;
   height: 23px;
   margin: auto;
 }
-@mixin icons() {
+@mixin icons() 
+{
   width: 30px;
   height: 30px;
   text-align: center;
@@ -41,7 +50,8 @@
   color: $icon-color;
   float: left;
 }
-@mixin st-right-horizontal() {
+@mixin st-right-horizontal() 
+{
   float: right;
   line-height: 40px;
   margin: 0px 5px;
@@ -49,7 +59,8 @@
   color: white;
   font-size: 20px;
 }
-@mixin ideas-divs() {
+@mixin ideas-divs() 
+{
   width: 100%;
   height: 150px;
   background-color: green;
@@ -57,7 +68,8 @@
   font-size: 30px;
   position: relative;
 }
-@mixin ideas-span($paddingh, $paddingw) {
+@mixin ideas-span($paddingh, $paddingw) 
+{
   border-radius: 50%;
   background-color: white;
   padding: $paddingh $paddingw;
@@ -65,36 +77,42 @@
   margin: 5px;
 }
 
-@mixin news-feed-idea-style {
+@mixin news-feed-idea-style 
+{
   margin: 10px;
   border: 1px solid gray;
   position: relative;
-  div.st-photo {
+  div.st-photo 
+  {
     height: 120px;
     width: 100%;
     margin: 5px;
     overflow: hidden;
     float: left;
 
-    img {
+    img 
+    {
       width: 120px;
       height: 120px;
       float: left;
       margin-right: 10px;
     }
   }
-  span.st-important-text {
+  span.st-important-text 
+  {
     font-size: 25px;
     float: left;
     color: $important-text;
     font-weight: 700;
     max-width: calc(100% - 200px);
   }
-  span.st-profile {
+  span.st-profile 
+  {
     color: $important-text;
     font-weight: 700;
   }
-  span.st-description {
+  span.st-description 
+  {
     opacity: 1;
     right: 100px;
     font-style: italic;
@@ -102,41 +120,49 @@
     margin: 0px;
     text-overflow: clip;
   }
-  p {
+  p 
+  {
     width: calc(100% - 80px);
   }
-  i.fa-star {
+  i.fa-star
+  {
     float: right;
     margin-right: 10px;
     top: 10px;
     right: 5px;
     position: absolute;
   }
-  i.fa-share-alt-square {
+  i.fa-share-alt-square 
+  {
     float: right;
     margin-right: 10px;
     top: 10px;
     right: 25px;
     position: absolute;
   }
-  p.st-last-comment {
+  p.st-last-comment 
+  {
     opacity: 0.5;
     margin: 5px 0px;
   }
-  div.st-new-input {
+  div.st-new-input 
+  {
     border-bottom: 1px solid gray;
     height: auto;
     min-height: 40px;
   }
-  p.st-comment {
+  p.st-comment 
+  {
     float: left;
     margin: 11px 0px;
   }
 
-  i.fa-comment-alt {
+  i.fa-comment-alt 
+  {
     float: left;
   }
-  div.icon-holder {
+  div.icon-holder 
+  {
     height: 30px;
     width: 60px;
     margin-top: 5px;
@@ -146,9 +172,11 @@
       font-size: 30px;
     }
   }
-  div.st-new-comment {
+  div.st-new-comment 
+  {
     padding: 4px 0px;
-    div.st-profile-holder {
+    div.st-profile-holder 
+    {
       height: 30px;
       width: 45px;
       margin-left: 7.5px;
@@ -158,32 +186,39 @@
       background-color: gray;
       padding: 5px 0px;
       border-radius: 50%;
-      i.fas {
+      i.fas 
+      {
         margin-top: 4px;
       }
     }
-    form.st-text-box {
+    form.st-text-box 
+    {
       height: 41px;
-      input {
+      input 
+      {
         width: calc(100% - 160px);
         margin-left: 8px;
         float: left;
         height: 35px;
       }
-      div.st-methods {
+      div.st-methods 
+      {
         float: left;
         text-align: center;
         height: 41px;
         width: 85px;
-        i {
+        i 
+        {
           padding: 12.5px;
           display: inline-block;
         }
-        i.fa-paperclip {
+        i.fa-paperclip 
+        {
           background-color: gray;
           color: white;
         }
-        i.fa-reply {
+        i.fa-reply 
+        {
           background-color: $horizontal-bar;
         }
       }

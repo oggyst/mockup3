@@ -1,0 +1,1221 @@
+body {
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+  min-width: 360px;
+}
+
+body div.st-vertical-bar {
+  width: 40px;
+  height: 100vh;
+  background-color: #424244;
+  float: left;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+body div.st-vertical-bar div {
+  width: 23px;
+  height: 23px;
+  margin: 10px 0px;
+}
+
+body div.st-vertical-bar div img {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  overflow: hidden;
+  margin: 5px;
+  font-size: 20px;
+  color: #a9a8ab;
+  float: left;
+  margin-bottom: 5px;
+}
+
+body div.st-vertical-bar div i {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  overflow: hidden;
+  margin: 5px;
+  font-size: 20px;
+  color: #a9a8ab;
+  float: left;
+}
+
+body div.st-vertical-bar div.st-logo {
+  margin-top: 0px;
+}
+
+body div.st-vertical-bar div.st-settings {
+  position: absolute;
+  top: calc(50% - 10px);
+}
+
+body div.st-horizontal-bar {
+  width: calc(100vw - 40px);
+  min-width: 320px;
+  position: absolute;
+  float: left;
+  left: 40px;
+  top: 0px;
+  height: 40px;
+  background-color: #13AEB2;
+}
+
+body div.st-horizontal-bar div.st-idea-icon i {
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  margin-left: 15px;
+  float: left;
+}
+
+body div.st-horizontal-bar div.st-idea-icon p {
+  color: white;
+  margin: 12px 10px;
+  float: left;
+}
+
+body div.st-horizontal-bar div.st-right-icons {
+  float: right;
+}
+
+body div.st-horizontal-bar div.st-right-icons i {
+  float: right;
+  line-height: 40px;
+  margin: 0px 5px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+body div.st-horizontal-bar div.st-right-icons i.fa-chevron-down {
+  font-size: 15px;
+}
+
+body div.st-horizontal-bar div.st-right-icons p {
+  float: right;
+  line-height: 40px;
+  margin: 0px 5px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-size: 15px;
+}
+
+body div.st-horizontal-bar div.st-right-icons i.fa-bell::after {
+  content: "13";
+  position: absolute;
+  background: red;
+  height: 10px;
+  width: 10px;
+  top: 10px;
+  right: 175px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 10px;
+  border-radius: 50%;
+  color: white;
+}
+
+body div.st-header {
+  width: calc(100% - 100px);
+  font-size: 25px;
+  line-height: 40px;
+  border-bottom: 1px solid #f3f3f3;
+  float: left;
+  margin: 45px 0px 0px 30px;
+  color: #13AEB2;
+  position: relative;
+}
+
+body div.st-view {
+  float: right;
+  margin-top: 5px;
+}
+
+body div.st-view p {
+  float: left;
+  margin: 8px 15px;
+  opacity: 0.5;
+}
+
+body div.st-view img.selected {
+  margin-right: 15px;
+}
+
+body div.st-ideas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-row: 150;
+  grid-row: 150px;
+  width: calc(100% - 100px);
+  float: left;
+  font-size: 50px;
+  margin: 80px auto 0px;
+  gap: 10px;
+}
+
+body div.st-ideas div.icons {
+  text-align: right;
+}
+
+body div.st-ideas div.icons span.st-notification {
+  font-size: 16px;
+  background-color: #13AEB2;
+  padding: 5px 10px;
+  border-radius: 50%;
+  float: right;
+  position: relative;
+  right: 94px;
+  bottom: 5px;
+}
+
+body div.st-ideas div.icons p {
+  font-size: 16px;
+  margin: 0px 25px;
+}
+
+body div.st-ideas div.icons2 span.st-notification {
+  font-size: 16px;
+  background-color: #13AEB2;
+  padding: 5px 10px;
+  border-radius: 50%;
+  float: none;
+  position: relative;
+  bottom: 128px;
+  left: 15px;
+}
+
+body div.st-ideas div.icons2 p {
+  font-size: 16px;
+  position: relative;
+  margin: 0px;
+  width: 120px;
+  text-align: center;
+}
+
+body div.st-ideas i.fa-border-none {
+  text-align: right;
+  margin-right: 35px;
+}
+
+body div.st-ideas i.fa-clock {
+  margin-left: 35px;
+}
+
+body div.st-ideas div.add-idea {
+  width: 100%;
+  height: 150px;
+  background-color: green;
+  border-radius: 10px;
+  font-size: 30px;
+  position: relative;
+}
+
+body div.st-ideas div.add-idea span {
+  border-radius: 50%;
+  background-color: white;
+  padding: 0px 10px;
+  float: left;
+  margin: 5px;
+}
+
+body div.st-ideas div.add-idea p {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  margin: 0px;
+  color: white;
+}
+
+body div.st-ideas div.add-idea i {
+  position: absolute;
+  font-size: 120px;
+  right: 10px;
+  bottom: 0px;
+  color: white;
+}
+
+body div.st-ideas div.new-idea {
+  width: 100%;
+  height: 150px;
+  background-color: green;
+  border-radius: 10px;
+  font-size: 30px;
+  position: relative;
+}
+
+body div.st-ideas div.new-idea span {
+  border-radius: 50%;
+  background-color: white;
+  padding: 0px 3px;
+  float: left;
+  margin: 5px;
+}
+
+body div.st-ideas div.new-idea p {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  margin: 0px;
+}
+
+body div.st-ideas div.new-idea i {
+  position: absolute;
+  font-size: 120px;
+  right: 10px;
+  bottom: 0px;
+  color: white;
+}
+
+body div.st-content-holder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-left: 60px;
+  width: calc(100% - 100px);
+}
+
+body div.st-news-feed {
+  border: 1px solid #13AEB2;
+  margin-top: 15px;
+}
+
+body div.st-news-feed div.st-title {
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  background-color: #13AEB2;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one {
+  margin: 10px;
+  border: 1px solid gray;
+  position: relative;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one div.st-photo {
+  height: 120px;
+  width: 100%;
+  margin: 5px;
+  overflow: hidden;
+  float: left;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one div.st-photo img {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-right: 10px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one span.st-important-text {
+  font-size: 25px;
+  float: left;
+  color: #457289;
+  font-weight: 700;
+  max-width: calc(100% - 200px);
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one span.st-profile {
+  color: #457289;
+  font-weight: 700;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one span.st-description {
+  opacity: 1;
+  right: 100px;
+  font-style: italic;
+  float: left;
+  margin: 0px;
+  text-overflow: clip;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one p {
+  width: calc(100% - 80px);
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one i.fa-star {
+  float: right;
+  margin-right: 10px;
+  top: 10px;
+  right: 5px;
+  position: absolute;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one i.fa-share-alt-square {
+  float: right;
+  margin-right: 10px;
+  top: 10px;
+  right: 25px;
+  position: absolute;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one p.st-last-comment {
+  opacity: 0.5;
+  margin: 5px 0px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one div.st-new-input {
+  border-bottom: 1px solid gray;
+  height: auto;
+  min-height: 40px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one p.st-comment {
+  float: left;
+  margin: 11px 0px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one i.fa-comment-alt {
+  float: left;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one div.icon-holder {
+  height: 30px;
+  width: 60px;
+  margin-top: 5px;
+  float: left;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one div.icon-holder i {
+  margin: 0px 15px;
+  font-size: 30px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one div.st-new-comment {
+  padding: 4px 0px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one div.st-new-comment div.st-profile-holder {
+  height: 30px;
+  width: 45px;
+  margin-left: 7.5px;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  background-color: gray;
+  padding: 5px 0px;
+  border-radius: 50%;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one div.st-new-comment div.st-profile-holder i.fas {
+  margin-top: 4px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one div.st-new-comment form.st-text-box {
+  height: 41px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one div.st-new-comment form.st-text-box input {
+  width: calc(100% - 160px);
+  margin-left: 8px;
+  float: left;
+  height: 35px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one div.st-new-comment form.st-text-box div.st-methods {
+  float: left;
+  text-align: center;
+  height: 41px;
+  width: 85px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one div.st-new-comment form.st-text-box div.st-methods i {
+  padding: 12.5px;
+  display: inline-block;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one div.st-new-comment form.st-text-box div.st-methods i.fa-paperclip {
+  background-color: gray;
+  color: white;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-one div.st-new-comment form.st-text-box div.st-methods i.fa-reply {
+  background-color: #13AEB2;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two {
+  margin: 10px;
+  border: 1px solid gray;
+  position: relative;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two div.st-photo {
+  height: 120px;
+  width: 100%;
+  margin: 5px;
+  overflow: hidden;
+  float: left;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two div.st-photo img {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-right: 10px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two span.st-important-text {
+  font-size: 25px;
+  float: left;
+  color: #457289;
+  font-weight: 700;
+  max-width: calc(100% - 200px);
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two span.st-profile {
+  color: #457289;
+  font-weight: 700;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two span.st-description {
+  opacity: 1;
+  right: 100px;
+  font-style: italic;
+  float: left;
+  margin: 0px;
+  text-overflow: clip;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two p {
+  width: calc(100% - 80px);
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two i.fa-star {
+  float: right;
+  margin-right: 10px;
+  top: 10px;
+  right: 5px;
+  position: absolute;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two i.fa-share-alt-square {
+  float: right;
+  margin-right: 10px;
+  top: 10px;
+  right: 25px;
+  position: absolute;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two p.st-last-comment {
+  opacity: 0.5;
+  margin: 5px 0px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two div.st-new-input {
+  border-bottom: 1px solid gray;
+  height: auto;
+  min-height: 40px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two p.st-comment {
+  float: left;
+  margin: 11px 0px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two i.fa-comment-alt {
+  float: left;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two div.icon-holder {
+  height: 30px;
+  width: 60px;
+  margin-top: 5px;
+  float: left;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two div.icon-holder i {
+  margin: 0px 15px;
+  font-size: 30px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two div.st-new-comment {
+  padding: 4px 0px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two div.st-new-comment div.st-profile-holder {
+  height: 30px;
+  width: 45px;
+  margin-left: 7.5px;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  background-color: gray;
+  padding: 5px 0px;
+  border-radius: 50%;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two div.st-new-comment div.st-profile-holder i.fas {
+  margin-top: 4px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two div.st-new-comment form.st-text-box {
+  height: 41px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two div.st-new-comment form.st-text-box input {
+  width: calc(100% - 160px);
+  margin-left: 8px;
+  float: left;
+  height: 35px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two div.st-new-comment form.st-text-box div.st-methods {
+  float: left;
+  text-align: center;
+  height: 41px;
+  width: 85px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two div.st-new-comment form.st-text-box div.st-methods i {
+  padding: 12.5px;
+  display: inline-block;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two div.st-new-comment form.st-text-box div.st-methods i.fa-paperclip {
+  background-color: gray;
+  color: white;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-two div.st-new-comment form.st-text-box div.st-methods i.fa-reply {
+  background-color: #13AEB2;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three {
+  margin: 10px;
+  border: 1px solid gray;
+  position: relative;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three div.st-photo {
+  height: 120px;
+  width: 100%;
+  margin: 5px;
+  overflow: hidden;
+  float: left;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three div.st-photo img {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-right: 10px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three span.st-important-text {
+  font-size: 25px;
+  float: left;
+  color: #457289;
+  font-weight: 700;
+  max-width: calc(100% - 200px);
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three span.st-profile {
+  color: #457289;
+  font-weight: 700;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three span.st-description {
+  opacity: 1;
+  right: 100px;
+  font-style: italic;
+  float: left;
+  margin: 0px;
+  text-overflow: clip;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three p {
+  width: calc(100% - 80px);
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three i.fa-star {
+  float: right;
+  margin-right: 10px;
+  top: 10px;
+  right: 5px;
+  position: absolute;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three i.fa-share-alt-square {
+  float: right;
+  margin-right: 10px;
+  top: 10px;
+  right: 25px;
+  position: absolute;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three p.st-last-comment {
+  opacity: 0.5;
+  margin: 5px 0px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three div.st-new-input {
+  border-bottom: 1px solid gray;
+  height: auto;
+  min-height: 40px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three p.st-comment {
+  float: left;
+  margin: 11px 0px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three i.fa-comment-alt {
+  float: left;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three div.icon-holder {
+  height: 30px;
+  width: 60px;
+  margin-top: 5px;
+  float: left;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three div.icon-holder i {
+  margin: 0px 15px;
+  font-size: 30px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three div.st-new-comment {
+  padding: 4px 0px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three div.st-new-comment div.st-profile-holder {
+  height: 30px;
+  width: 45px;
+  margin-left: 7.5px;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  background-color: gray;
+  padding: 5px 0px;
+  border-radius: 50%;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three div.st-new-comment div.st-profile-holder i.fas {
+  margin-top: 4px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three div.st-new-comment form.st-text-box {
+  height: 41px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three div.st-new-comment form.st-text-box input {
+  width: calc(100% - 160px);
+  margin-left: 8px;
+  float: left;
+  height: 35px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three div.st-new-comment form.st-text-box div.st-methods {
+  float: left;
+  text-align: center;
+  height: 41px;
+  width: 85px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three div.st-new-comment form.st-text-box div.st-methods i {
+  padding: 12.5px;
+  display: inline-block;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three div.st-new-comment form.st-text-box div.st-methods i.fa-paperclip {
+  background-color: gray;
+  color: white;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three div.st-new-comment form.st-text-box div.st-methods i.fa-reply {
+  background-color: #13AEB2;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-three i.image {
+  width: 120px;
+  height: 120px;
+  float: left;
+  background-color: #424244;
+  margin-right: 10px;
+  font-size: 80px;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four {
+  margin: 10px;
+  border: 1px solid gray;
+  position: relative;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four div.st-photo {
+  height: 120px;
+  width: 100%;
+  margin: 5px;
+  overflow: hidden;
+  float: left;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four div.st-photo img {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-right: 10px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four span.st-important-text {
+  font-size: 25px;
+  float: left;
+  color: #457289;
+  font-weight: 700;
+  max-width: calc(100% - 200px);
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four span.st-profile {
+  color: #457289;
+  font-weight: 700;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four span.st-description {
+  opacity: 1;
+  right: 100px;
+  font-style: italic;
+  float: left;
+  margin: 0px;
+  text-overflow: clip;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four p {
+  width: calc(100% - 80px);
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four i.fa-star {
+  float: right;
+  margin-right: 10px;
+  top: 10px;
+  right: 5px;
+  position: absolute;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four i.fa-share-alt-square {
+  float: right;
+  margin-right: 10px;
+  top: 10px;
+  right: 25px;
+  position: absolute;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four p.st-last-comment {
+  opacity: 0.5;
+  margin: 5px 0px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four div.st-new-input {
+  border-bottom: 1px solid gray;
+  height: auto;
+  min-height: 40px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four p.st-comment {
+  float: left;
+  margin: 11px 0px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four i.fa-comment-alt {
+  float: left;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four div.icon-holder {
+  height: 30px;
+  width: 60px;
+  margin-top: 5px;
+  float: left;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four div.icon-holder i {
+  margin: 0px 15px;
+  font-size: 30px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four div.st-new-comment {
+  padding: 4px 0px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four div.st-new-comment div.st-profile-holder {
+  height: 30px;
+  width: 45px;
+  margin-left: 7.5px;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  background-color: gray;
+  padding: 5px 0px;
+  border-radius: 50%;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four div.st-new-comment div.st-profile-holder i.fas {
+  margin-top: 4px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four div.st-new-comment form.st-text-box {
+  height: 41px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four div.st-new-comment form.st-text-box input {
+  width: calc(100% - 160px);
+  margin-left: 8px;
+  float: left;
+  height: 35px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four div.st-new-comment form.st-text-box div.st-methods {
+  float: left;
+  text-align: center;
+  height: 41px;
+  width: 85px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four div.st-new-comment form.st-text-box div.st-methods i {
+  padding: 12.5px;
+  display: inline-block;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four div.st-new-comment form.st-text-box div.st-methods i.fa-paperclip {
+  background-color: gray;
+  color: white;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four div.st-new-comment form.st-text-box div.st-methods i.fa-reply {
+  background-color: #13AEB2;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four i.image {
+  width: 120px;
+  height: 120px;
+  float: left;
+  background-color: #424244;
+  margin-right: 10px;
+  font-size: 80px;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four div.icon-holder {
+  margin: 0px;
+}
+
+body div.st-news-feed div.st-news-feed-ideas div.st-idea-four p.st-last-comm {
+  position: relative;
+  top: 5px;
+}
+
+body div.st-news-feed div.st-rest {
+  border: 1px solid #13AEB2;
+  margin-top: 15px;
+}
+
+body div.st-news-feed div.st-idea-five {
+  margin: 10px;
+  border: 1px solid gray;
+  position: relative;
+}
+
+body div.st-news-feed div.st-idea-five div.st-photo {
+  height: 120px;
+  width: 100%;
+  margin: 5px;
+  overflow: hidden;
+  float: left;
+}
+
+body div.st-news-feed div.st-idea-five div.st-photo img {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-right: 10px;
+}
+
+body div.st-news-feed div.st-idea-five span.st-important-text {
+  font-size: 25px;
+  float: left;
+  color: #457289;
+  font-weight: 700;
+  max-width: calc(100% - 200px);
+}
+
+body div.st-news-feed div.st-idea-five span.st-profile {
+  color: #457289;
+  font-weight: 700;
+}
+
+body div.st-news-feed div.st-idea-five span.st-description {
+  opacity: 1;
+  right: 100px;
+  font-style: italic;
+  float: left;
+  margin: 0px;
+  text-overflow: clip;
+}
+
+body div.st-news-feed div.st-idea-five p {
+  width: calc(100% - 80px);
+}
+
+body div.st-news-feed div.st-idea-five i.fa-star {
+  float: right;
+  margin-right: 10px;
+  top: 10px;
+  right: 5px;
+  position: absolute;
+}
+
+body div.st-news-feed div.st-idea-five i.fa-share-alt-square {
+  float: right;
+  margin-right: 10px;
+  top: 10px;
+  right: 25px;
+  position: absolute;
+}
+
+body div.st-news-feed div.st-idea-five p.st-last-comment {
+  opacity: 0.5;
+  margin: 5px 0px;
+}
+
+body div.st-news-feed div.st-idea-five div.st-new-input {
+  border-bottom: 1px solid gray;
+  height: auto;
+  min-height: 40px;
+}
+
+body div.st-news-feed div.st-idea-five p.st-comment {
+  float: left;
+  margin: 11px 0px;
+}
+
+body div.st-news-feed div.st-idea-five i.fa-comment-alt {
+  float: left;
+}
+
+body div.st-news-feed div.st-idea-five div.icon-holder {
+  height: 30px;
+  width: 60px;
+  margin-top: 5px;
+  float: left;
+}
+
+body div.st-news-feed div.st-idea-five div.icon-holder i {
+  margin: 0px 15px;
+  font-size: 30px;
+}
+
+body div.st-news-feed div.st-idea-five div.st-new-comment {
+  padding: 4px 0px;
+}
+
+body div.st-news-feed div.st-idea-five div.st-new-comment div.st-profile-holder {
+  height: 30px;
+  width: 45px;
+  margin-left: 7.5px;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  background-color: gray;
+  padding: 5px 0px;
+  border-radius: 50%;
+}
+
+body div.st-news-feed div.st-idea-five div.st-new-comment div.st-profile-holder i.fas {
+  margin-top: 4px;
+}
+
+body div.st-news-feed div.st-idea-five div.st-new-comment form.st-text-box {
+  height: 41px;
+}
+
+body div.st-news-feed div.st-idea-five div.st-new-comment form.st-text-box input {
+  width: calc(100% - 160px);
+  margin-left: 8px;
+  float: left;
+  height: 35px;
+}
+
+body div.st-news-feed div.st-idea-five div.st-new-comment form.st-text-box div.st-methods {
+  float: left;
+  text-align: center;
+  height: 41px;
+  width: 85px;
+}
+
+body div.st-news-feed div.st-idea-five div.st-new-comment form.st-text-box div.st-methods i {
+  padding: 12.5px;
+  display: inline-block;
+}
+
+body div.st-news-feed div.st-idea-five div.st-new-comment form.st-text-box div.st-methods i.fa-paperclip {
+  background-color: gray;
+  color: white;
+}
+
+body div.st-news-feed div.st-idea-five div.st-new-comment form.st-text-box div.st-methods i.fa-reply {
+  background-color: #13AEB2;
+}
+
+body div.st-news-feed div.st-idea-five i.image {
+  width: 120px;
+  height: 120px;
+  float: left;
+  background-color: #424244;
+  margin-right: 10px;
+  font-size: 80px;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+}
+
+body div.st-news-feed div.st-idea-five div.icon-holder {
+  margin: 0px;
+}
+
+body div.st-news-feed div.st-idea-five p.st-last-comm {
+  position: relative;
+  top: 5px;
+}
+
+body div.st-rest {
+  border: 1px solid #13AEB2;
+  margin-top: 15px;
+}
+
+body div.st-rest div.st-title {
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  background-color: #13AEB2;
+}
+
+body div.st-rest div.st-campaigns {
+  margin: 10px;
+}
+
+body div.st-rest div.st-campaigns div.st-campaign-one,
+body div.st-rest div.st-campaigns div.st-campaign-two,
+body div.st-rest div.st-campaigns div.st-campaign-three {
+  overflow: hidden;
+  height: 120px;
+  border: 1px solid gray;
+}
+
+body div.st-rest div.st-campaigns div.st-campaign-one img,
+body div.st-rest div.st-campaigns div.st-campaign-two img,
+body div.st-rest div.st-campaigns div.st-campaign-three img {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-right: 10px;
+}
+
+body div.st-rest div.st-campaigns div.st-campaign-one span.st-campaign-name,
+body div.st-rest div.st-campaigns div.st-campaign-two span.st-campaign-name,
+body div.st-rest div.st-campaigns div.st-campaign-three span.st-campaign-name {
+  font-size: 25px;
+  float: left;
+  color: #457289;
+  font-weight: 700;
+  max-width: calc(100% - 200px);
+}
+
+body div.st-rest div.st-campaigns div.st-campaign-one p,
+body div.st-rest div.st-campaigns div.st-campaign-two p,
+body div.st-rest div.st-campaigns div.st-campaign-three p {
+  margin-bottom: 0px;
+}
+
+body div.st-rest div.st-campaigns div.st-campaign-one p span.st-profile,
+body div.st-rest div.st-campaigns div.st-campaign-two p span.st-profile,
+body div.st-rest div.st-campaigns div.st-campaign-three p span.st-profile {
+  color: #457289;
+  font-weight: 700;
+}
+
+body div.st-rest div.st-campaigns div.st-campaign-one span.st-description,
+body div.st-rest div.st-campaigns div.st-campaign-two span.st-description,
+body div.st-rest div.st-campaigns div.st-campaign-three span.st-description {
+  float: left;
+  position: relative;
+  height: 45px;
+  width: calc(100% - 200px);
+}
+
+body div.st-rest div.st-campaigns div.st-campaign-one span.st-ending,
+body div.st-rest div.st-campaigns div.st-campaign-two span.st-ending,
+body div.st-rest div.st-campaigns div.st-campaign-three span.st-ending {
+  float: left;
+  top: 5px;
+  position: relative;
+  color: #38e038;
+}
+
+body div.st-rest div.st-campaigns div.st-campaign-one span.st-ended,
+body div.st-rest div.st-campaigns div.st-campaign-two span.st-ended,
+body div.st-rest div.st-campaigns div.st-campaign-three span.st-ended {
+  float: left;
+  top: 5px;
+  position: relative;
+  color: red;
+}
+
+body div.st-rest div.st-campaigns div.st-campaign-one div.st-lightbulb,
+body div.st-rest div.st-campaigns div.st-campaign-two div.st-lightbulb,
+body div.st-rest div.st-campaigns div.st-campaign-three div.st-lightbulb {
+  float: right;
+  font-size: 100px;
+  position: relative;
+  bottom: 85px;
+}
+
+body div.st-rest div.st-campaigns div.st-campaign-one span.st-numb,
+body div.st-rest div.st-campaigns div.st-campaign-two span.st-numb,
+body div.st-rest div.st-campaigns div.st-campaign-three span.st-numb {
+  position: relative;
+  float: right;
+  left: 55px;
+  bottom: 65px;
+  padding: 10px 15px;
+  background-color: #13AEB2;
+  border-radius: 50%;
+}
+
+body div.st-rest div.st-campaigns div.st-new-campaign {
+  height: 120px;
+  width: 100%;
+  background-color: #13AEB2;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+body div.st-rest div.st-campaigns span.st-number {
+  float: left;
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+body div.st-rest div.st-campaigns span.st-start-new {
+  float: left;
+  font-size: 25px;
+  color: white;
+  position: relative;
+  top: 85px;
+  right: 35px;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -11,10 +11,20 @@
 </head>
 
 <body>
-    <div class="st-vertical-bar">
+    <div class="st-header">
+        <span class="st-left-header"><i class="far fa-lightbulb"></i> Ideas</span>
+        <span class="st-right-header">
+            <i class="fas fa-chevron-down"></i>
+            <p>Dusan Jelesijevic</p>
+            <i class="fas fa-user-circle"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-th"></i>
+        </span>
+    </div>
+    <div class="st-vertical">
         <div class="st-logo"><img src="/img/logo.png" alt="Logo"></div>
         <div class="st-search"><i class="fas fa-search"></i></div>
-        <div class="st-home"><i class="fas fa-home"></i></div>
+        <div class="st-home"><span class="st-selected"><i class="fas fa-home"></i></span></div>
         <div class="st-idea"><i class="far fa-lightbulb"></i></div>
         <div class="st-idea"><i class="far fa-lightbulb"></i></div>
         <div class="st-idea"><i class="far fa-lightbulb"></i></div>
@@ -24,227 +34,245 @@
         <div class="st-idea"><i class="far fa-lightbulb"></i></div>
         <div class="st-settings"><i class="fas fa-cog"></i></div>
     </div>
-    <div class="st-horizontal-bar">
-        <div class="st-idea-icon">
-            <i class="far fa-lightbulb"></i>
-            <p>Ideas</p>
-        </div>
-        <div class="st-right-icons">
-            <i class="fas fa-chevron-down"></i>
-            <p>Dusan Jelesijevic</p>
-            <i class="fas fa-user-circle"></i>
-            <i class="fas fa-bell"></i>
-            <i class="fas fa-th"></i>
-        </div>
+    <div class="st-ideas">
+        <span class="st-ideas">Ideas home</span>
     </div>
-    <div class="st-header">Ideas home</div>
     <div class="st-view">
         <p>Change view</p>
         <img src="/img/unselected.png" alt=" "><img class="selected" src="/img/selected.png" alt=" ">
     </div>
-    <div class="st-ideas">
+    <div class="st-ideas-status">
         <div class="icons"><span class="st-notification">5</span> <i class="fas fa-border-none"></i><br>
-            <p>ideas are in scoring</p>
+            <p>Ideas are in scoring</p>
         </div>
         <div class="icons2"><i class="far fa-clock"></i><br>
             <p>Ideas waiting for <br>aproval</p><span class="st-notification">4</span>
         </div>
-        <div class="add-idea"><span>1</span>
+        <div class="new-idea"><span>1</span>
             <p>Add new idea</p>
             <i class="far fa-lightbulb"></i>
         </div>
-        <div class="new-idea"><span>41</span>
+        <div class="add-idea"><span>41</span>
             <p>All ideas</p>
             <i class="far fa-lightbulb"></i>
         </div>
     </div>
-    <div class="st-content-holder">
-        <div class="st-news-feed">
-            <div class="st-title">News feed</div>
-            <div class="st-news-feed-ideas">
-                <div class="st-idea-one">
-                    <div class="st-photo"><img src="/img/Daki.jpg" alt="Profile">
-                        <span class="st-important-text">jhgjhhg</span>
-                        <p> <br>Owned by <span class="st-profile">Daki Duplikat</span><br>
-                            <span class="st-description">No description</span></p>
+    <div class="st-main-content">
+        <div class="st-left">
+            <div class="st-title">
+                <span class="st-news">News feed</span>
+            </div>
+            <div class="st-idea first">
+                <div class="st-photo"><img src="/img/Daki.jpg" alt="Profile"></div>
+                <div class="st-idea-desc">
+                    <span class="st-idea-title">jhgjhhg
                         <i class="far fa-star"></i>
                         <i class="fas fa-share-alt-square"></i>
-                        <br>
-                    </div>
-                    <div class="st-new-input">
-                        <div class="icon-holder"><i class="far fa-comment-alt"></i></div>
-                        <p class="st-last-comment"> Last comment by: <span class="st-profile">Daki Duplikat</span>
-                            - Thursday at 15:28 <br> aaa</p>
-                    </div>
-                    <div class="st-new-input">
-                        <div class="icon-holder"><i class="far fa-comment-alt"></i></div>
-                        <p class="st-comment"><span class="st-profile">Daki Duplikat</span> has commented on an idea
-                            Thursday at 15:28<br></p>
-                    </div>
-
-                    <div class="st-new-input">
-                        <div class="icon-holder"><i class="fas fa-bullseye"></i></div>
-                        <p class="st-comment"><span class="st-profile">Daki Duplikat</span> has added an idea to the
-                            campaign
-                            <span class="st-profile">Aca notification test</span> - on April 27 at 15:15</p>
-                    </div>
-
-                    <div class="st-new-comment">
-                        <div class="st-profile-holder">
-                            <span><i class="fas fa-user"></i></span>
-                        </div>
-                        <form class="st-text-box">
-                            <input type="text">
-                            <div class="st-methods">
-                                <i class="fas fa-paperclip"></i>
-                                <i class="fas fa-reply"></i>
-                            </div>
-                        </form>
-                    </div>
+                    </span>
+                    <p>Owned by <span class="st-profile">Daki Duplikat</span>
+                        <span class="st-description">No description</span></p>
+                    <br>
                 </div>
-                <div class="st-idea-two">
-                    <div class="st-photo"><img src="/img/test123.png" alt="Profile">
-                        <span class="st-important-text">Test123</span>
-                        <p> <br>Owned by <span class="st-profile">Daki Duplikat</span><br>
-                            <span class="st-description">Test</span></p>
-                        <i class="far fa-star"></i>
-                        <i class="fas fa-share-alt-square"></i>
-                    </div>
-                    <div class="st-new-input">
-                        <div class="icon-holder"><i class="far fa-comment-alt"></i></div>
-                        <p class="st-last-comment"> Last comment by: <span class="st-profile">Daki Duplikat</span>
-                            - Thursday at 10:43 <br> testtesttesttesttesttesttesttesttesttesttesttesttesttest</p>
-                    </div>
-                    <div class="st-new-input">
-                        <div class="icon-holder"><i class="fas fa-wrench"></i></div>
-                        <p class="st-comment"><span class="st-profile">Daki Duplikat</span> has sent the idea to rework
-                            - Thursday at 13:36<br></p>
-                    </div>
-                    <div class="st-new-input">
-                        <div class="icon-holder"><i class="far fa-comment-alt"></i></div>
-                        <p class="st-comment"><span class="st-profile">Daki Duplikat</span> has sent the idea to scoring
-                            - Thursday at 13:18.<br></p>
-                    </div>
-                    <div class="st-new-input">
-                        <div class="icon-holder"><i class="far fa-file-alt"></i></div>
-                        <p class="st-comment"><span class="st-profile">Daki Duplikat</span> has added the new document
-                            videoFile.mp4 to the idea - Thursday at 10:43</p>
+                <div class="st-new-input">
+                    <div class="st-icon-holder st-last"><i class="far fa-comment-alt"></i></div>
+                    <p class="st-last-comment"> Last comment by: <span class="st-profile">Daki Duplikat</span>
+                        - Thursday at 15:28 <br> aaa</p>
+                </div>
+                <div class="st-new-input">
+                    <div class="st-icon-holder"><i class="far fa-comment-alt"></i></div>
+                    <p class="st-comment"><span class="st-profile">Daki Duplikat</span> has commented on an idea
+                        Thursday at 15:28<br></p>
+                </div>
+                <div class="st-new-input">
+                    <div class="st-icon-holder"><i class="fas fa-bullseye"></i></div>
+                    <p class="st-comment"><span class="st-profile">Daki Duplikat</span> has added an idea to the
+                        campaign
+                        <span class="st-profile">Aca notification test</span> - on April 27 at 15:15</p>
+                </div>
 
+                <div class="st-new-comment">
+                    <div class="st-profile-holder">
+                        <span><i class="fas fa-user"></i></span>
                     </div>
-                    <div class="st-new-comment">
-                        <div class="st-profile-holder">
-                            <span><i class="fas fa-user"></i></span>
-                        </div>
-                        <form class="st-text-box">
-                            <input type="text">
-                            <div class="st-methods">
-                                <i class="fas fa-paperclip"></i>
-                                <i class="fas fa-reply"></i>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="st-idea-three">
-                    <div class="st-photo"><i class="image far fa-lightbulb"></i>
-                        <span class="st-important-text">Aca notify test 5</span>
-                        <p> <br>Owned by <span class="st-profile">Aco Cupric</span><br>
-                            <span class="st-description">No description</span></p>
-                        <i class="far fa-star"></i>
-                        <i class="fas fa-share-alt-square"></i>
-                    </div>
-                    <div class="st-new-input">
-                        <div class="icon-holder"><i class="far fa-comment-alt"></i></div>
-                        <p class="st-last-comment"> Last comment by: <span class="st-profile">Daki Duplikat</span>
-                            - on April 30 at 09:51 <br>gfdgfd</p>
-                    </div>
-                    <div class="st-new-input">
-                        <div class="icon-holder"><i class="far fa-comment-alt"></i></div>
-                        <p class="st-comment"><span class="st-profile">Daki Duplikat</span> has commented on an idea
-                            - on April 30 at 09:51<br></p>
-                    </div>
-
-                    <div class="st-new-input">
-                        <div class="icon-holder"><i class="fas fa-bullseye"></i></div>
-                        <p class="st-comment"><span class="st-profile">Marina Banjevic</span> has added an idea to the
-                            campaign
-                            <span class="st-profile">Aca notification test</span> - on December 11,2015 at 09:47</p>
-                    </div>
-                    <div class="st-new-input">
-                        <div class="icon-holder"><i class="far fa-lightbulb"></i></div>
-                        <p class="st-comment"><span class="st-profile">Aco Cupric</span> has submited a new idea
-                            - on December 11,2015 at 09:47</p>
-                    </div>
-                    <div class="st-new-comment">
-                        <div class="st-profile-holder">
-                            <span><i class="fas fa-user"></i></span>
-                        </div>
-                        <form class="st-text-box">
-                            <input type="text">
-                            <div class="st-methods">
-                                <i class="fas fa-paperclip"></i>
-                                <i class="fas fa-reply"></i>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="st-idea-four">
-                    <div class="st-photo"><i class="image far fa-lightbulb"></i>
-                        <span class="st-important-text">ok</span>
-                        <p> <br>Owned by <span class="st-profile">Dusan Jelesijevic</span><br>
-                            <span class="st-description">test thumb</span></p>
-                        <i class="far fa-star"></i>
-                        <i class="fas fa-share-alt-square"></i>
-                    </div>
-                    <div class="st-new-input">
-                        <div class="icon-holder"><i class="fas fa-bullseye"></i></div>
-                        <p class="st-st-new-input"><span class="st-profile">Dusan Jelisavljevic</span>
-                            has added an idea to the campaign <span class="st-profile">Default Campaign</span> - on
-                            April 05 at 12:05 </p>
-                    </div>
-                    <div class="st-new-comment">
-                        <div class="st-profile-holder">
-                            <span><i class="fas fa-user"></i></span>
-                        </div>
-                        <form class="st-text-box">
-                            <input type="text">
-                            <div class="st-methods">
-                                <i class="fas fa-paperclip"></i>
-                                <i class="fas fa-reply"></i>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="st-idea-five">
-                    <div class="st-photo"><i class="image far fa-lightbulb"></i>
-                        <span class="st-important-text">Pink Floyd - Shine on you crazy Diamond (Billka Edit) -
-                            YouTube</span>
-                        <p> <br>Owned by <span class="st-profile">Daki Duplikat</span><br>
-                            <span class="st-description">https://www.youtube.com/watch?v=1kJ3YcH19Os</span></p>
-                        <i class="far fa-star"></i>
-                        <i class="fas fa-share-alt-square"></i>
-                    </div>
-                    <div class="st-new-input">
-                        <div class="icon-holder"><i class="fas fa-bullseye"></i></div>
-                        <p class="st-st-new-input"><span class="st-profile">Dusan Jelisavljevic</span>
-                            has added an idea to the campaign <span class="st-profile">Default Campaign</span> - on
-                            April 05 at 12:05 </p>
-                    </div>
-                    <div class="st-new-comment">
-                        <div class="st-profile-holder">
-                            <span><i class="fas fa-user"></i></span>
-                        </div>
-                        <form class="st-text-box">
-                            <input type="text">
-                            <div class="st-methods">
-                                <i class="fas fa-paperclip"></i>
-                                <i class="fas fa-reply"></i>
-                            </div>
-                        </form>
-                    </div>
+                    <form class="st-text-box">
+                        <input type="text">
+                        <span class="st-methods">
+                            <i class="fas fa-paperclip"></i>
+                            <i class="fas fa-reply"></i>
+                        </span>
+                    </form>
                 </div>
             </div>
+            <div class="st-idea second">
+                <div class="st-photo"><img src="/img/test123.png" alt="Profile"></div>
+                <div class="st-idea-desc">
+                    <span class="st-idea-title">Test123
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-share-alt-square"></i>
+                    </span>
+                    <p>Owned by <span class="st-profile">Daki Duplikat</span>
+                        <span class="st-description">Test</span></p>
+                    <br>
+                </div>
+                <div class="st-new-input">
+                    <div class="st-icon-holder st-last"><i class="far fa-comment-alt"></i></div>
+                    <p class="st-last-comment"> Last comment by: <span class="st-profile">Daki Duplikat</span>
+                        - Thursday at 15:28 <br>testtestesttesttestesttesttestesttesttestesttesttestesttesttestest</p>
+                </div>
+                <div class="st-new-input">
+                    <div class="st-icon-holder"><i class="fas fa-bullseye"></i></div>
+                    <p class="st-comment"><span class="st-profile">Daki Duplikat</span> has sent an idea to rework -
+                        Thursday at 13:36<br></p>
+                </div>
+                <div class="st-new-input">
+                    <div class="st-icon-holder"><i class="far fa-lightbulb"></i></div>
+                    <p class="st-comment"><span class="st-profile">Daki Duplikat</span> has sent idea to scoring -
+                        Thursday at 13:18</p>
+                </div>
+                <div class="st-new-comment">
+                    <div class="st-profile-holder">
+                        <span><i class="fas fa-user"></i></span>
+                    </div>
+                    <form class="st-text-box">
+                        <input type="text">
+                        <span class="st-methods">
+                            <i class="fas fa-paperclip"></i>
+                            <i class="fas fa-reply"></i>
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <div class="st-idea third">
+                <div class="st-photo"><i class="far fa-lightbulb"></i></div>
+                <div class="st-idea-desc">
+                    <span class="st-idea-title">Aca notify test 5
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-share-alt-square"></i>
+                    </span>
+                    <p>Owned by <span class="st-profile">Aco Cupric</span>
+                        <span class="st-description">No description</span></p>
+                    <br>
+                </div>
+                <div class="st-new-input">
+                    <div class="st-icon-holder st-last"><i class="far fa-comment-alt"></i></div>
+                    <p class="st-last-comment"> Last comment by: <span class="st-profile">Daki Duplikat</span>
+                        - on april 30 at 09:51<br>gfdgfd</p>
+                </div>
+                <div class="st-new-input">
+                    <div class="st-icon-holder"><i class="far fa-comment-alt"></i></div>
+                    <p class="st-comment"><span class="st-profile">Daki Duplikat</span> has commented on an idea
+                        - on April 30 at 09:51<br></p>
+                </div>
+                <div class="st-new-input">
+                    <div class="st-icon-holder"><i class="fas fa-bullseye"></i></div>
+                    <p class="st-comment"><span class="st-profile">Marina Banjevic</span> has added an idea to the
+                        campaign
+                        <span class="st-profile">Aca notification test</span> - on December 11,2015 at 09:48</p>
+                </div>
+                <div class="st-new-input">
+                    <div class="st-icon-holder"><i class="far fa-lightbulb"></i></div>
+                    <p class="st-comment"><span class="st-profile">Aco Cuprtic</span> has submited a new idea
+                        - on December 11,2015 at 09:47</p>
+                </div>
+                <div class="st-new-comment">
+                    <div class="st-profile-holder">
+                        <span><i class="fas fa-user"></i></span>
+                    </div>
+                    <form class="st-text-box">
+                        <input type="text">
+                        <span class="st-methods">
+                            <i class="fas fa-paperclip"></i>
+                            <i class="fas fa-reply"></i>
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <div class="st-idea fourth">
+                <div class="st-photo"><i class="fab fa-angellist"></i></div>
+                <div class="st-idea-desc">
+                    <span class="st-idea-title">ok
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-share-alt-square"></i>
+                    </span>
+                    <p>Owned by <span class="st-profile">Dusan Jelesijevic</span>
+                        <span class="st-description">test thumb</span></p>
+
+                    <br>
+                </div>
+                <div class="st-new-input">
+                    <div class="st-icon-holder"><i class="fas fa-bullseye"></i></div>
+                    <p class="st-comment"><span class="st-profile">Dusan Jelesijevic </span> has added an idea to the
+                        campaign
+                        <span class="st-profile">Default Campaignt</span> - on April 05 at 12:05</p>
+                </div>
+                <div class="st-new-comment">
+                    <div class="st-profile-holder">
+                        <span><i class="fas fa-user"></i></span>
+                    </div>
+                    <form class="st-text-box">
+                        <input type="text">
+                        <span class="st-methods">
+                            <i class="fas fa-paperclip"></i>
+                            <i class="fas fa-reply"></i>
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <div class="st-idea fifth">
+                <div class="st-photo"><i class="fab fa-angellist"></i></div>
+                <div class="st-idea-desc">
+                    <span class="st-idea-title">Pink Floyd - Shine On You Crazy Diamond (Billka Edit) - YouTube
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-share-alt-square"></i>
+                    </span>
+                    <p>Owned by <span class="st-profile">Daki Duplikat</span>
+                        <!-- <span class="st-description">https://www.youtube.com/watch?v=_PMnIr8tlAI> https://www.youtube.com/watch?v=_PMnIr8tlAI> 
+                            https://www.youtube.com/watch?v=_PMnIr8tlAI> https://www.youtube.com/watch?v=_PMnIr8tlAI</span></p> -->
+
+                        <br>
+                </div>
+                <div class="st-new-input">
+                    <div class="st-icon-holder"><i class="fas fa-bullseye"></i></div>
+                    <p class="st-comment"><span class="st-profile">Daki Duplikat </span> has added an idea to the
+                        campaign
+                        <span class="st-profile">Test J - on April 03 at 12:00</span> - on April 05 at 12:05</p>
+                </div>
+            </div>
+            <div class="st-idea sixth">
+                <div class="st-photo"><i class="fab fa-angellist"></i></div>
+                <div class="st-idea-desc">
+                    <span class="st-idea-title">Pink Floyd - Shine On You Crazy Diamond (Billka Edit) - YouTube
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-share-alt-square"></i>
+                    </span>
+                    <p>Owned by <span class="st-profile">Daki Duplikat</span>
+                        <span class="st-description">https://www.youtube.com/watch?v=_PMnIr8tlAI</span></p>
+                    <br>
+                </div>
+                <div class="st-new-input">
+                    <div class="st-icon-holder"><i class="fas fa-bullseye"></i></div>
+                    <p class="st-comment"><span class="st-profile">Daki Duplikat </span> has added an idea to the
+                        campaign
+                        <span class="st-profile">Test J - on April 03 at 12:00</span> - on April 05 at 12:05</p>
+                </div>
+                <div class="st-new-comment">
+                    <div class="st-profile-holder">
+                        <span><i class="fas fa-user"></i></span>
+                    </div>
+                    <form class="st-text-box">
+                        <input type="text">
+                        <span class="st-methods">
+                            <i class="fas fa-paperclip"></i>
+                            <i class="fas fa-reply"></i>
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <div class="st-show-more">
+                <p>Show more</p>
+            </div>
         </div>
-        <div class="st-rest">
+        <div class="st-right">
             <div class="st-title">Campaigns</div>
             <div class="st-campaigns">
                 <div class="st-campaign-one">
@@ -283,7 +311,195 @@
                 <div class="st-new-campaign">
                     <span class="st-number">6</span>
                     <span class="st-start-new">Start new campaign</span>
-                    <div class="st-right"></div>
+                    <div class="st-right"><i class="fas fa-plus"></i><i class="fas fa-bullseye"></i>
+                    </div>
+                </div>
+                <div class="st-show-more-holder">
+                    <p class="st-show-more">Show more campaigns</p>
+                </div>
+            </div>
+            <div class="st-all-ideas">
+                <div class="st-title"></div>
+                <div class="st-activity">
+                    <div class="st-cards">
+                        <div class="st-card selected"><span>Popular</span></div>
+                        <div class="st-card unselected"><span>Latest added</span></div>
+                        <div class="st-card unselected"><span>Recently visited</span></div>
+                        <div class="st-card unselected"><span>Recommended</span></div>
+                        <div class="st-card unselected"><span>Approved</span></div>
+                    </div>
+                    <div class="st-thumbnail">
+                        <div class="st-icon">
+                            <i class="far fa-lightbulb"></i>
+                        </div>
+                        <div class="st-thumbnail-text">
+                            <span class="st-idea-title">Half Test 22222222222222222222222
+                                <i class="far fa-star"></i>
+                                <i class="fas fa-share-alt-square"></i>
+                            </span>
+                            <span class="st-description">
+                                Owned by: <span class="st-profile">Marina Banjevic</span>
+                                -08-jul-2015
+                            </span>
+                            <p class="st-text">
+                                Suspendisse potenti. Aenean blandit facilisis magna, quis ullamcorper massa laoreet sed.
+                                Nulla interdum est euismod sollicitudin efficitur. Fusce porta felis id eros dapibus
+                                commodo. Nullam at condimentum augue. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Ut mollis id nisl ut auctor. Cras dapibus id dolor at dapibus. Ut sed varius
+                                turpis. Etiam blandit nunc augue, et pulvinar nisi vulputate scelerisque. Ut purus
+                                augue, elementum vel ornare vitae, faucibus vel purus. Duis id est enim. Mauris porta
+                                fermentum purus, eget tincidunt lorem malesuada id. Aliquam ac nisi iaculis, accumsan
+                                diam non, euismod lacus. Cras id bibendum ipsum.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="st-thumbnail">
+                        <div class="st-icon">
+                            <i class="far fa-lightbulb"></i>
+                        </div>
+                        <div class="st-thumbnail-text">
+                            <span class="st-idea-title">ccccccc
+                                <i class="far fa-star"></i>
+                                <i class="fas fa-share-alt-square"></i>
+                            </span>
+                            <span class="st-description">
+                                Owned by: <span class="st-profile">Marina Banjevic</span>
+                                -10-dec-2015
+                            </span>
+                        </div>
+                    </div>
+                    <div class="st-thumbnail">
+                        <div class="st-icon">
+                            <i class="far fa-lightbulb"></i>
+                        </div>
+                        <div class="st-thumbnail-text">
+                            <span class="st-idea-title">Aca notification test 7
+                                <i class="far fa-star"></i>
+                                <i class="fas fa-share-alt-square"></i>
+                            </span>
+                            <span class="st-description">
+                                Owned by: <span class="st-profile">Marina Banjevic</span>
+                                -11-Dec-2015
+                            </span>
+                        </div>
+                    </div>
+                    <div class="st-thumbnail">
+                        <div class="st-icon">
+                            <i class="far fa-lightbulb"></i>
+                        </div>
+                        <div class="st-thumbnail-text">
+                            <span class="st-idea-title">Test
+                                <i class="far fa-star"></i>
+                                <i class="fas fa-share-alt-square"></i>
+                            </span>
+                            <span class="st-description">
+                                Owned by: <span class="st-profile">Marina Banjevic</span>
+                                -08-jul-2015
+                            </span>
+                            <p class="st-text">
+                                Test Test Test Test Test Test Test Test Test Test Test Test
+                                Test Test Test Test Test Test Test Test Test Test Test Test
+                                Test Test Test Test Test Test Test Test Test Test Test Test
+                            </p>
+                        </div>
+                    </div>
+                    <div class="st-show-more-holder">
+                        <p class="st-show-more">Show more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="st-top-contributors">
+                <div class="st-title">
+                    <span class="st-title-text">Top Contributors</span>
+                </div>
+                <div class="st-first">
+                    <div class="st-icon">
+                        <p class="name">DD</p>
+                    </div>
+                    <div class="st-username">
+                        <span class="st-profile">Daki Duplikat</span>
+                        <br>
+                        <span class="st-desc">Kopija</span>
+                    </div>
+                    <div class="st-status">
+                        <div class="st-stat-holder">
+                            <span class="st-comment st-stat">7
+                                <i class="far fa-comment-alt"></i>
+                            </span>
+                        </div>
+                        <div class="st-stat-holder">
+                            <span class="st-notification st-stat">14
+                                <i class="far fa-lightbulb"></i>
+                            </span>
+                        </div>
+                        <div class="st-stat-holder">
+                            <span class="st-likes st-stat">2
+                                <i class="far fa-thumbs-up"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="st-bedge">
+                        <p>1</p>
+                    </div>
+                </div>
+                <div class="st-others second">
+                    <div class="st-icon">
+                        <p class="name">MZ</p>
+                    </div>
+                    <div class="st-username">
+                        <span class="st-profile">Majk Zivadinovic</span>
+                        <br>
+                    </div>
+                    <div class="st-status">
+                        <div class="st-stat-holder">
+                            <span class="st-comment st-stat">1
+                                <i class="far fa-comment-alt"></i>
+                            </span>
+                        </div>
+                        <div class="st-stat-holder">
+                            <span class="st-notification st-stat">0
+                                <i class="far fa-lightbulb"></i>
+                            </span>
+                        </div>
+                        <div class="st-stat-holder">
+                            <span class="st-likes st-stat">9
+                                <i class="far fa-thumbs-up"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="st-bedge">
+                        <p>2</p>
+                    </div>
+                </div>
+                <div class="st-others third">
+                    <div class="st-icon">
+                        <p class="name">DJ</p>
+                    </div>
+                    <div class="st-username">
+                        <span class="st-profile">Dusan Jelesijevic</span>
+                        <br>
+                        <span class="st-desc">Admin</span>
+                    </div>
+                    <div class="st-status">
+                        <div class="st-stat-holder">
+                            <span class="st-comment st-stat">0
+                                <i class="far fa-comment-alt"></i>
+                            </span>
+                        </div>
+                        <div class="st-stat-holder">
+                            <span class="st-notification st-stat">1
+                                <i class="far fa-lightbulb"></i>
+                            </span>
+                        </div>
+                        <div class="st-stat-holder">
+                            <span class="st-likes st-stat">0
+                                <i class="far fa-thumbs-up"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="st-bedge">
+                        <p>3</p>
+                    </div>
                 </div>
             </div>
         </div>

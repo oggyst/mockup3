@@ -5,7 +5,7 @@ body
 {
   margin: 0px;
   padding: 0px;
-  min-width: 590px;
+  min-width: 360px;
   div.st-header 
   {
     width: calc(100% - 50px);
@@ -26,21 +26,21 @@ body
     float: left;
     font-size: 25px;
     @include vertical-center();
-    // @include break-point(470px) 
-    // {
-    //   display: none;
-    // }
+    @include break-point(490px) 
+    {
+      display: none;
+    }
   }
   span.st-right-header 
   {
     font-size: 25px;
     margin-right: 15px;
     float: right;
-    width:315px;
-    @include break-point(590px) 
+    min-width:315px;
+    @include break-point(490px) 
     {
-      position:absolute;
-      left:197px;
+      margin: auto;
+      position:relative;
     }
     i {
       float: right;
@@ -538,9 +538,9 @@ body
           font-weight: 700;
           max-width: calc(100% - 200px);
         }
-        p 
+        p
         {
-          margin-bottom: 0px;
+          margin:8px 0px 0px 0px;
           color: $text-gray;
           span.st-profile 
           {
@@ -548,16 +548,21 @@ body
             font-weight: 700;
           }
         }
-        div.st-description,
+      
+         
+        p.st-description,
         span.st-description
         {
+          max-width: calc(100% - 200px);
+          overflow:hidden;
+          text-overflow: ellipsis;
+          display:block;
+          height:45px;
           float: left;
           position: relative;
           color: $text-gray;
-          height:45px;
-          max-height: 45px;
-          display:block;
-          width: calc(100% - 200px);
+          margin:0px;
+          width:100%;
         }
         span.st-ending 
         {
@@ -878,11 +883,15 @@ body
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           grid-gap: 25px;
-          // @include break-point(590px)
-          //
-          // {
-          //   grid-gap:5px;
-          // }
+          @include break-point(590px)
+          
+          {
+            grid-gap:5px;
+          }
+          @include break-point(570px)
+          {
+            display:
+          }
           span.st-stat 
           {
             text-align: center;
@@ -921,6 +930,10 @@ body
           height: 150px;
           bottom: 50px;
           position: relative;
+          @include break-point(588px)
+          {
+            bottom:108px
+          }
           p
           {
             text-align: center;

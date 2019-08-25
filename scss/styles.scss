@@ -350,7 +350,7 @@ body
       {
         float: left;
         width: calc(100% - 122px);
-        height: 118px;
+        min-height:118px;
         border-right: 1px solid $border-gray;
         border-top: 1px solid $border-gray;
         border-bottom: 1px solid $border-gray;
@@ -548,12 +548,15 @@ body
             font-weight: 700;
           }
         }
-        span.st-description 
+        div.st-description,
+        span.st-description
         {
           float: left;
           position: relative;
           color: $text-gray;
-          height: 45px;
+          height:45px;
+          max-height: 45px;
+          display:block;
           width: calc(100% - 200px);
         }
         span.st-ending 
@@ -563,35 +566,40 @@ body
           position: relative;
           color: $green;
           font-weight: 700;
+          background-color:white;
+          z-index:3;
         }
         span.st-ended 
         {
+          position:relative;
           float: left;
           top: 5px;
           position: relative;
           color: red;
           font-weight: 700;
+          background-color:white;
+          z-index:3;
         }
         div.st-lightbulb 
         {
           float: right;
-          font-size: 100px;
+          font-size: 86px;
           position: relative;
-          bottom: 65px;
+          bottom: 53px;
           transform: rotate(320deg);
-          color: $border-gray;
-        }
+          color: #F1F1F1;
+      }
         span.st-numb 
         {
           position: relative;
           float: right;
-          left: 40px;
+          left: 37px;
           color: white;
-          bottom: 45px;
+          bottom: 35px;
           padding: 10px 15px;
-          background-color: $blue;
+          background-color: #17ACB3;
           border-radius: 50%;
-        }
+      }
       }
       div.st-new-campaign 
       {

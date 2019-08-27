@@ -5,7 +5,6 @@ body
 {
   margin: 0px;
   padding: 0px;
-  min-width: 360px;
   div.st-header 
   {
     width: calc(100% - 50px);
@@ -243,11 +242,11 @@ body
     {
       border-radius: 50%;
       background-color: white;
-      height: 45px;
-      width: 45px;
-      line-height: 45px;
+      height: 35px;
+      width: 35px;
+      line-height: 35px;
+      font-size:18px;
       text-align: center;
-      padding: 10px 10px;
       float: left;
       margin: 5px;
     }
@@ -356,7 +355,7 @@ body
         border-bottom: 1px solid $border-gray;
         span.st-idea-title 
         {
-          font-size: 25px;
+          font-size: 22px;
           padding-left: 5px;
           float: left;
           color: $blue-text;
@@ -386,7 +385,6 @@ body
           {
             color: $text-gray;
             margin-top: 10px;
-            padding-left: 5px;
             width: 100%;
             float: left;
           }
@@ -608,7 +606,7 @@ body
       }
       div.st-new-campaign 
       {
-        height: 120px;
+        height: 100px;
         width: 100%;
         background-color: $blue;
         border-radius: 5px;
@@ -617,7 +615,10 @@ body
         {
           float: left;
           margin: 5px;
-          padding: 10px 15px;
+          height:50px;
+          width:50px;
+          line-height: 50px;
+          text-align:center;
           background-color: white;
           border-radius: 50%;
           color: $blue;
@@ -628,18 +629,18 @@ body
           font-size: 25px;
           color: white;
           position: relative;
-          top: 85px;
+          top: 65px;
           right: 35px;
         }
         div.st-right 
         {
           float: right;
-          font-size: 50px;
+          font-size:60px;
           color: white;
         }
         i.fa-bullseye 
         {
-          margin-top: 70px;
+          margin-top: 40px;
         }
         i.fa-plus 
         {
@@ -835,7 +836,8 @@ body
       {
         width: calc(100% - 30px);
         height: 160px;
-        margin: auto;
+        margin: 0px 14px;
+        float:left;
         border: 1px solid $border-gray;
         div.st-icon 
         {
@@ -861,6 +863,7 @@ body
           float: left;
           width: calc(100% - 215px);
           margin-top: 5px;
+          height:55px;
           float: left;
           span.st-profile 
           {
@@ -887,10 +890,6 @@ body
           
           {
             grid-gap:5px;
-          }
-          @include break-point(570px)
-          {
-            display:
           }
           span.st-stat 
           {
@@ -928,11 +927,11 @@ body
           float: right;
           width: 50px;
           height: 150px;
-          bottom: 50px;
+          bottom: 60px;
           position: relative;
           @include break-point(588px)
           {
-            bottom:108px
+            bottom:118px
           }
           p
           {
@@ -949,6 +948,8 @@ body
         height: 90px;
         margin: auto;
         display: block;
+        float:left;
+        margin:0 14px;
         border: 1px solid $border-gray;
         div.st-icon 
         {
@@ -972,8 +973,10 @@ body
         div.st-username 
         {
           float: left;
+          display: block;
           width: calc(100% - 215px);
           margin-top: 5px;
+          height:45px;
           float: left;
           span.st-profile 
           {
@@ -1037,8 +1040,7 @@ body
           float: right;
           width: 50px;
           height: 85px;
-          left: 50px;
-          bottom: 32px;
+          bottom: 50px;
           position: relative;
           p 
           {
@@ -1049,10 +1051,6 @@ body
             margin: 15px 0px;
           }
         }
-      }
-      div.third div.st-bedge {
-        left: 0px;
-        bottom: 50px;
       }
     }
   }

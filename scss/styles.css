@@ -84,6 +84,7 @@ body span.st-right-header i.fa-bell::after {
 
 body div.st-vertical {
   height: 100vh;
+  min-height: 465px;
   width: 50px;
   float: left;
   background-color: #424244;
@@ -173,9 +174,23 @@ body div.st-ideas-status {
   }
 }
 
+@media (max-width: 500px) {
+  body div.st-ideas-status {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
 body div.st-ideas-status div.icons {
   text-align: right;
   height: 150px;
+}
+
+@media (max-width: 500px) {
+  body div.st-ideas-status div.icons {
+    text-align: center;
+  }
 }
 
 body div.st-ideas-status div.icons span.st-notification {
@@ -189,10 +204,22 @@ body div.st-ideas-status div.icons span.st-notification {
   bottom: 5px;
 }
 
+@media (max-width: 500px) {
+  body div.st-ideas-status div.icons span.st-notification {
+    right: calc((100% + 45px) / 2);
+  }
+}
+
 body div.st-ideas-status div.icons p {
   font-size: 16px;
   margin: 0px 25px;
   color: #a6a6a6;
+}
+
+@media (max-width: 500px) {
+  body div.st-ideas-status div.icons2 {
+    text-align: center;
+  }
 }
 
 body div.st-ideas-status div.icons2 span.st-notification {
@@ -206,6 +233,13 @@ body div.st-ideas-status div.icons2 span.st-notification {
   left: 15px;
 }
 
+@media (max-width: 500px) {
+  body div.st-ideas-status div.icons2 span.st-notification {
+    position: relative;
+    left: -35px;
+  }
+}
+
 body div.st-ideas-status div.icons2 p {
   font-size: 16px;
   position: relative;
@@ -216,13 +250,33 @@ body div.st-ideas-status div.icons2 p {
   color: #a6a6a6;
 }
 
+@media (max-width: 500px) {
+  body div.st-ideas-status div.icons2 p {
+    margin: 0px auto;
+  }
+}
+
 body div.st-ideas-status i.fa-border-none {
   text-align: right;
   margin-right: 35px;
 }
 
+@media (max-width: 500px) {
+  body div.st-ideas-status i.fa-border-none {
+    margin: 0px;
+  }
+}
+
 body div.st-ideas-status i.fa-clock {
   margin-left: 35px;
+}
+
+@media (max-width: 500px) {
+  body div.st-ideas-status i.fa-clock {
+    margin-left: 0px;
+    right: 15px;
+    position: relative;
+  }
 }
 
 body div.add-idea,

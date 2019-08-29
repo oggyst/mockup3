@@ -151,20 +151,20 @@ body
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row: 150px;
-    float: left;
-    width: calc(100% - 80px);
     font-size: 50px;
-    margin-top: 50px;
-    margin-left: 50px;
+    float: left;
+    position:relative;
+    width: calc(100% - 105px);
     gap: 10px;
+    margin: 25px 65px;
     @include break-point(850px) 
     {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; 
     }
     @include break-point(500px) 
     {
       grid-template-columns: 1fr;
-      width:100%;
+     
     }
     div.icons {
       text-align: right;
@@ -441,6 +441,7 @@ body
           margin: 0px;
           width: calc(100% - 60px);
           padding-top: 5px;
+          overflow:hidden;
         }
         p.st-comment 
         {
@@ -904,14 +905,20 @@ body
           border-top: 1px solid $border-gray;
           padding-top: 25px;
           width: calc(100% - 415px);
-          min-width: 220px;
+          min-width: 150px;
           display: grid;
+          min-width:213px;
           grid-template-columns: 1fr 1fr 1fr;
           grid-gap: 25px;
-          @include break-point(590px)
-          
+          @include break-point(565px)
+            {
+            grid-template-columns: 1fr 1fr;
+            grid-gap:0px;
+            grid-row-gap: 5px;
+            }
+          @include break-point(548px)
           {
-            grid-gap:5px;
+            min-width:130px;
           }
           span.st-stat 
           {
@@ -920,6 +927,14 @@ body
             float: left;
             color: $blue-text;
             font-size: 28px;
+            // @include break-point(521px)
+            // {
+            // font-size:15px;
+            // }
+            @include break-point(590px)
+            {
+              grid-gap:5px;
+            }
             i 
             {
               color: $text-gray;
@@ -928,6 +943,10 @@ body
           span.st-comment 
           {
             text-align: right;
+            @include break-point(565px)
+            {
+           text-align:center;
+            }
           }
           span.st-notification 
           {
@@ -936,6 +955,10 @@ body
           span.st-likes 
           {
             text-align: left;
+            @include break-point(565px)
+            {
+           text-align:center;
+            }
           }
           i 
           {
@@ -951,9 +974,13 @@ body
           height: 150px;
           bottom: 60px;
           position: relative;
-          @include break-point(588px)
+          @include break-point(564px)
           {
-            bottom:118px
+            bottom:156px;
+          }
+          @include break-point(548px)
+          {
+            bottom:61px;
           }
           p
           {

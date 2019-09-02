@@ -10,3 +10,8 @@
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

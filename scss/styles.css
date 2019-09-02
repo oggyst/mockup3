@@ -37,7 +37,6 @@ body span.st-right-header {
   font-size: 25px;
   margin-right: 15px;
   float: right;
-  min-width: 315px;
 }
 
 @media (max-width: 490px) {
@@ -334,8 +333,8 @@ body div.new-idea {
 body div.st-main-content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
   float: left;
   width: calc(100% - 105px);
   gap: 10px;
@@ -344,8 +343,8 @@ body div.st-main-content {
 
 @media (max-width: 1460px) {
   body div.st-main-content {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: (100%)[1];
+        grid-template-columns: repeat(1, 100%);
     width: calc(100% - 105px);
   }
 }
@@ -416,7 +415,11 @@ body div.st-left div.st-idea div.st-idea-desc span.st-idea-title {
   float: left;
   color: #0f6c71;
   font-weight: 600;
+  height: 30px;
   width: calc(100% - 10px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 body div.st-left div.st-idea div.st-idea-desc span.st-idea-title i {
@@ -436,14 +439,22 @@ body div.st-left div.st-idea div.st-idea-desc p {
   margin: 0px;
   padding-left: 5px;
   width: 100%;
+  text-align: left;
   float: left;
+  height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 body div.st-left div.st-idea div.st-idea-desc p span.st-description {
   color: #a6a6a6;
   margin-top: 10px;
-  width: 100%;
   float: left;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 body div.st-left div.st-idea div.st-new-input {
@@ -545,6 +556,7 @@ body div.st-left div.st-show-more p {
   width: 100%;
   text-align: center;
   line-height: 35px;
+  color: #a6a6a6;
 }
 
 body div.st-right {
@@ -573,6 +585,7 @@ body div.st-right div.st-campaigns div.st-campaign-two,
 body div.st-right div.st-campaigns div.st-campaign-three {
   overflow: hidden;
   height: 120px;
+  width: calc(100% -50px);
   border: 1px solid #F1F1F1;
 }
 
@@ -593,6 +606,9 @@ body div.st-right div.st-campaigns div.st-campaign-three span.st-campaign-name {
   color: #0f6c71;
   font-weight: 700;
   max-width: calc(100% - 200px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 body div.st-right div.st-campaigns div.st-campaign-one p,
@@ -600,6 +616,9 @@ body div.st-right div.st-campaigns div.st-campaign-two p,
 body div.st-right div.st-campaigns div.st-campaign-three p {
   margin: 8px 0px 0px 0px;
   color: #a6a6a6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 body div.st-right div.st-campaigns div.st-campaign-one p span.st-profile,
@@ -615,16 +634,15 @@ body div.st-right div.st-campaigns div.st-campaign-two p.st-description,
 body div.st-right div.st-campaigns div.st-campaign-two span.st-description,
 body div.st-right div.st-campaigns div.st-campaign-three p.st-description,
 body div.st-right div.st-campaigns div.st-campaign-three span.st-description {
-  max-width: calc(100% - 200px);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
   height: 45px;
   float: left;
   position: relative;
   color: #a6a6a6;
   margin: 0px;
-  width: 100%;
+  width: calc(100% - 210px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 body div.st-right div.st-campaigns div.st-campaign-one span.st-ending,
@@ -808,7 +826,7 @@ body div.st-right div.st-all-ideas div.st-activity div.st-thumbnail div.st-icon 
   background-color: #929397;
   font-size: 55px;
   float: left;
-  margin: 5px 0px 0px 15px;
+  margin: 4px 0px 0px 15px;
   display: block;
 }
 
@@ -857,7 +875,9 @@ body div.st-right div.st-all-ideas div.st-activity div.st-thumbnail-text p.st-te
   margin-left: 5px;
   color: #a6a6a6;
   max-height: 60px;
+  float: left;
   margin-bottom: 5px;
+  overflow: hidden;
 }
 
 body div.st-right div.st-all-ideas div.st-activity div.st-show-more-holder {
@@ -951,7 +971,6 @@ body div.st-right div.st-top-contributors div.st-first div.st-status {
   border-top: 1px solid #F1F1F1;
   padding-top: 25px;
   width: calc(100% - 415px);
-  min-width: 150px;
   display: -ms-grid;
   display: grid;
   min-width: 213px;
@@ -1097,6 +1116,12 @@ body div.st-right div.st-top-contributors div.st-others div.st-username span.st-
 
 body div.st-right div.st-top-contributors div.st-others div.st-username span.st-desc {
   color: #a6a6a6;
+}
+
+@media (max-width: 512px) {
+  body div.st-right div.st-top-contributors div.st-others div.st-username span.st-desc {
+    display: none;
+  }
 }
 
 body div.st-right div.st-top-contributors div.st-others div.st-status {

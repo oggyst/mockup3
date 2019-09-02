@@ -355,6 +355,11 @@ body
           height: 120px;
           float: left;
           margin-bottom: 5px;
+          @include break-point(500px)
+          {
+            height:50px;
+            width:50px;
+          }
         }
         i 
         {
@@ -366,6 +371,13 @@ body
           text-align: center;
           background-color: #929397;
           margin-bottom: 5px;
+          @include break-point(500px)
+          {
+            height:50px;
+            font-size:30px;
+            line-height: 50px;
+            width:50px;
+          }
         }
       }
       div.st-idea-desc 
@@ -376,6 +388,13 @@ body
         border-right: 1px solid $border-gray;
         border-top: 1px solid $border-gray;
         border-bottom: 1px solid $border-gray;
+        @include break-point(500px)
+          {
+            width: calc(100% - 52px);
+            height:50px;
+            min-height: 50px;
+            overflow: hidden;
+          }
         span.st-idea-title 
         {
           
@@ -555,11 +574,20 @@ body
         height: 120px;
         width:calc(100% -50px);
         border: 1px solid $border-gray;
+        @include break-point(500px)
+        {
+          height:100px;
+        }
         img {
           width: 120px;
           height: 120px;
           float: left;
           margin-right: 10px;
+          @include break-point(500px)
+          {
+            height:50px;
+            width:50px;
+          }
         }
         span.st-campaign-name 
         {
@@ -568,8 +596,11 @@ body
           color: $blue-text;
           font-weight: 700;
           max-width: calc(100% - 200px);
-          
           @include text-overflow();
+          @include break-point(500px)
+          {
+          max-width: calc(100% - 80px);
+          }
         }
         p
         {
@@ -624,6 +655,10 @@ body
           bottom: 53px;
           transform: rotate(320deg);
           color: #F1F1F1;
+          @include break-point(500px)
+          {
+            display:none;
+          }
       }
         span.st-numb 
         {
@@ -635,6 +670,10 @@ body
           padding: 10px 15px;
           background-color: #17ACB3;
           border-radius: 50%;
+          @include break-point(500px)
+          {
+            display:none;
+          }
       }
       }
       div.st-new-campaign 
@@ -655,6 +694,12 @@ body
           background-color: white;
           border-radius: 50%;
           color: $blue;
+          @include break-point(496px)
+          {
+            height:30px;
+            width:30px;
+            line-height: 30px;
+          }
         }
         span.st-start-new 
         {
@@ -664,12 +709,27 @@ body
           position: relative;
           top: 65px;
           right: 35px;
+          @include break-point(496px)
+          {
+            font-size:18px;
+            top: 75px;
+            right: 35px;
+          }
         }
         div.st-right 
         {
           float: right;
           font-size:60px;
           color: white;
+          @include break-point(496px)
+          {
+            font-size:53px;
+          }
+          @include break-point(407px)
+          {
+            position:relative;
+            bottom:17px;
+          }
         }
         i.fa-bullseye 
         {
@@ -870,6 +930,10 @@ body
         margin: 0px 14px;
         float:left;
         border: 1px solid $border-gray;
+        @include break-point (500px)
+        {
+          height:90px;
+        }
         div.st-icon 
         {
           height: 150px;
@@ -880,6 +944,12 @@ body
           float: left;
           background-color: #a32660;
           color: white;
+          @include break-point (500px)
+          {
+            height:80px;
+            width:80px;
+            line-height: 80px;
+          }
           p.name 
           {
             width: 100%;
@@ -896,6 +966,10 @@ body
           margin-top: 5px;
           height:55px;
           float: left;
+          @include break-point (500px)
+          {
+            margin-left:7px;
+          }
           span.st-profile 
           {
             color: $blue-text;
@@ -926,6 +1000,10 @@ body
           @include break-point(548px)
           {
             min-width:130px;
+          }
+          @include break-point(500px)
+          {
+            display:none;
           }
           span.st-stat 
           {
@@ -989,12 +1067,25 @@ body
           {
             bottom:61px;
           }
+          @include break-point(500px)
+          {
+            height:85px;
+            line-height: 85px;
+          }
           p
           {
             text-align: center;
             width: 100%;
             font-size: 40px;
             color: white;
+            text-align: center;
+            @include break-point(500px)
+          {
+            font-size: 40px;
+            color: white;
+            margin:0px;
+          }
+           
           }
         }
       }
@@ -1059,11 +1150,10 @@ body
           min-width: 190px;
           grid-template-columns: 1fr 1fr 1fr;
           grid-gap: 25px;
-          // @include break-point(590px)
-          // 
-          // {
-          //   grid-gap:5px;
-          // }
+          @include break-point (500px)
+          {
+            display:none;
+          }
           div.st-stat-holder 
           {
             span.st-stat 
@@ -1102,6 +1192,10 @@ body
           height: 85px;
           bottom: 50px;
           position: relative;
+          @include break-point (500px)
+          {
+            bottom:0px;
+          }
           p 
           {
             text-align: center;

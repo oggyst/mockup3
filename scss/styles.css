@@ -389,6 +389,13 @@ body div.st-left div.st-idea div.st-photo img {
   margin-bottom: 5px;
 }
 
+@media (max-width: 500px) {
+  body div.st-left div.st-idea div.st-photo img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
 body div.st-left div.st-idea div.st-photo i {
   width: 120px;
   height: 120px;
@@ -400,6 +407,15 @@ body div.st-left div.st-idea div.st-photo i {
   margin-bottom: 5px;
 }
 
+@media (max-width: 500px) {
+  body div.st-left div.st-idea div.st-photo i {
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    width: 50px;
+  }
+}
+
 body div.st-left div.st-idea div.st-idea-desc {
   float: left;
   width: calc(100% - 122px);
@@ -407,6 +423,15 @@ body div.st-left div.st-idea div.st-idea-desc {
   border-right: 1px solid #F1F1F1;
   border-top: 1px solid #F1F1F1;
   border-bottom: 1px solid #F1F1F1;
+}
+
+@media (max-width: 500px) {
+  body div.st-left div.st-idea div.st-idea-desc {
+    width: calc(100% - 52px);
+    height: 50px;
+    min-height: 50px;
+    overflow: hidden;
+  }
 }
 
 body div.st-left div.st-idea div.st-idea-desc span.st-idea-title {
@@ -589,6 +614,14 @@ body div.st-right div.st-campaigns div.st-campaign-three {
   border: 1px solid #F1F1F1;
 }
 
+@media (max-width: 500px) {
+  body div.st-right div.st-campaigns div.st-campaign-one,
+  body div.st-right div.st-campaigns div.st-campaign-two,
+  body div.st-right div.st-campaigns div.st-campaign-three {
+    height: 100px;
+  }
+}
+
 body div.st-right div.st-campaigns div.st-campaign-one img,
 body div.st-right div.st-campaigns div.st-campaign-two img,
 body div.st-right div.st-campaigns div.st-campaign-three img {
@@ -596,6 +629,15 @@ body div.st-right div.st-campaigns div.st-campaign-three img {
   height: 120px;
   float: left;
   margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+  body div.st-right div.st-campaigns div.st-campaign-one img,
+  body div.st-right div.st-campaigns div.st-campaign-two img,
+  body div.st-right div.st-campaigns div.st-campaign-three img {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 body div.st-right div.st-campaigns div.st-campaign-one span.st-campaign-name,
@@ -609,6 +651,14 @@ body div.st-right div.st-campaigns div.st-campaign-three span.st-campaign-name {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+@media (max-width: 500px) {
+  body div.st-right div.st-campaigns div.st-campaign-one span.st-campaign-name,
+  body div.st-right div.st-campaigns div.st-campaign-two span.st-campaign-name,
+  body div.st-right div.st-campaigns div.st-campaign-three span.st-campaign-name {
+    max-width: calc(100% - 80px);
+  }
 }
 
 body div.st-right div.st-campaigns div.st-campaign-one p,
@@ -682,6 +732,14 @@ body div.st-right div.st-campaigns div.st-campaign-three div.st-lightbulb {
   color: #F1F1F1;
 }
 
+@media (max-width: 500px) {
+  body div.st-right div.st-campaigns div.st-campaign-one div.st-lightbulb,
+  body div.st-right div.st-campaigns div.st-campaign-two div.st-lightbulb,
+  body div.st-right div.st-campaigns div.st-campaign-three div.st-lightbulb {
+    display: none;
+  }
+}
+
 body div.st-right div.st-campaigns div.st-campaign-one span.st-numb,
 body div.st-right div.st-campaigns div.st-campaign-two span.st-numb,
 body div.st-right div.st-campaigns div.st-campaign-three span.st-numb {
@@ -693,6 +751,14 @@ body div.st-right div.st-campaigns div.st-campaign-three span.st-numb {
   padding: 10px 15px;
   background-color: #17ACB3;
   border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+  body div.st-right div.st-campaigns div.st-campaign-one span.st-numb,
+  body div.st-right div.st-campaigns div.st-campaign-two span.st-numb,
+  body div.st-right div.st-campaigns div.st-campaign-three span.st-numb {
+    display: none;
+  }
 }
 
 body div.st-right div.st-campaigns div.st-new-campaign {
@@ -715,6 +781,14 @@ body div.st-right div.st-campaigns div.st-new-campaign span.st-number {
   color: #17ACB3;
 }
 
+@media (max-width: 496px) {
+  body div.st-right div.st-campaigns div.st-new-campaign span.st-number {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+}
+
 body div.st-right div.st-campaigns div.st-new-campaign span.st-start-new {
   float: left;
   font-size: 25px;
@@ -724,10 +798,31 @@ body div.st-right div.st-campaigns div.st-new-campaign span.st-start-new {
   right: 35px;
 }
 
+@media (max-width: 496px) {
+  body div.st-right div.st-campaigns div.st-new-campaign span.st-start-new {
+    font-size: 18px;
+    top: 75px;
+    right: 35px;
+  }
+}
+
 body div.st-right div.st-campaigns div.st-new-campaign div.st-right {
   float: right;
   font-size: 60px;
   color: white;
+}
+
+@media (max-width: 496px) {
+  body div.st-right div.st-campaigns div.st-new-campaign div.st-right {
+    font-size: 53px;
+  }
+}
+
+@media (max-width: 407px) {
+  body div.st-right div.st-campaigns div.st-new-campaign div.st-right {
+    position: relative;
+    bottom: 17px;
+  }
 }
 
 body div.st-right div.st-campaigns div.st-new-campaign i.fa-bullseye {
@@ -929,6 +1024,12 @@ body div.st-right div.st-top-contributors div.st-first {
   border: 1px solid #F1F1F1;
 }
 
+@media (max-width: 500px) {
+  body div.st-right div.st-top-contributors div.st-first {
+    height: 90px;
+  }
+}
+
 body div.st-right div.st-top-contributors div.st-first div.st-icon {
   height: 150px;
   width: 150px;
@@ -938,6 +1039,14 @@ body div.st-right div.st-top-contributors div.st-first div.st-icon {
   float: left;
   background-color: #a32660;
   color: white;
+}
+
+@media (max-width: 500px) {
+  body div.st-right div.st-top-contributors div.st-first div.st-icon {
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+  }
 }
 
 body div.st-right div.st-top-contributors div.st-first div.st-icon p.name {
@@ -954,6 +1063,12 @@ body div.st-right div.st-top-contributors div.st-first div.st-username {
   margin-top: 5px;
   height: 55px;
   float: left;
+}
+
+@media (max-width: 500px) {
+  body div.st-right div.st-top-contributors div.st-first div.st-username {
+    margin-left: 7px;
+  }
 }
 
 body div.st-right div.st-top-contributors div.st-first div.st-username span.st-profile {
@@ -991,6 +1106,12 @@ body div.st-right div.st-top-contributors div.st-first div.st-status {
 @media (max-width: 548px) {
   body div.st-right div.st-top-contributors div.st-first div.st-status {
     min-width: 130px;
+  }
+}
+
+@media (max-width: 500px) {
+  body div.st-right div.st-top-contributors div.st-first div.st-status {
+    display: none;
   }
 }
 
@@ -1063,11 +1184,27 @@ body div.st-right div.st-top-contributors div.st-first div.st-bedge {
   }
 }
 
+@media (max-width: 500px) {
+  body div.st-right div.st-top-contributors div.st-first div.st-bedge {
+    height: 85px;
+    line-height: 85px;
+  }
+}
+
 body div.st-right div.st-top-contributors div.st-first div.st-bedge p {
   text-align: center;
   width: 100%;
   font-size: 40px;
   color: white;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  body div.st-right div.st-top-contributors div.st-first div.st-bedge p {
+    font-size: 40px;
+    color: white;
+    margin: 0px;
+  }
 }
 
 body div.st-right div.st-top-contributors div.st-others {
@@ -1137,6 +1274,12 @@ body div.st-right div.st-top-contributors div.st-others div.st-status {
   grid-gap: 25px;
 }
 
+@media (max-width: 500px) {
+  body div.st-right div.st-top-contributors div.st-others div.st-status {
+    display: none;
+  }
+}
+
 body div.st-right div.st-top-contributors div.st-others div.st-status div.st-stat-holder span.st-stat {
   width: 100%;
   bottom: 15px;
@@ -1171,6 +1314,12 @@ body div.st-right div.st-top-contributors div.st-others div.st-bedge {
   height: 85px;
   bottom: 50px;
   position: relative;
+}
+
+@media (max-width: 500px) {
+  body div.st-right div.st-top-contributors div.st-others div.st-bedge {
+    bottom: 0px;
+  }
 }
 
 body div.st-right div.st-top-contributors div.st-others div.st-bedge p {

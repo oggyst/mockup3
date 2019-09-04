@@ -14,4 +14,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  &:hover
+  {
+    overflow: visible; 
+    white-space: normal;
+    height:auto;
+  }
 }

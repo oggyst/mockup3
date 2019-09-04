@@ -1,8 +1,9 @@
 @import "colors.scss";
 @import "mixins.scss";
 
-body 
+body
 {
+  min-width: 400px;
   margin: 0px;
   padding: 0px;
   div.st-header 
@@ -1071,6 +1072,7 @@ body
           {
             height:85px;
             line-height: 85px;
+            bottom:0px;
           }
           p
           {

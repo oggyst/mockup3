@@ -420,7 +420,8 @@ body div.st-left div.st-idea div.st-photo i {
 body div.st-left div.st-idea div.st-idea-desc {
   float: left;
   width: calc(100% - 122px);
-  min-height: 118px;
+  height: 118px;
+  overflow: hidden;
   border-right: 1px solid #F1F1F1;
   border-top: 1px solid #F1F1F1;
   border-bottom: 1px solid #F1F1F1;
@@ -446,6 +447,8 @@ body div.st-left div.st-idea div.st-idea-desc span.st-idea-title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: white;
+  z-index: 3;
 }
 
 body div.st-left div.st-idea div.st-idea-desc span.st-idea-title:hover {
@@ -477,6 +480,8 @@ body div.st-left div.st-idea div.st-idea-desc p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: white;
+  z-index: 3;
 }
 
 body div.st-left div.st-idea div.st-idea-desc p:hover {
@@ -493,6 +498,8 @@ body div.st-left div.st-idea div.st-idea-desc p span.st-description {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: white;
+  z-index: 3;
 }
 
 body div.st-left div.st-idea div.st-idea-desc p span.st-description:hover {
@@ -666,10 +673,12 @@ body div.st-right div.st-campaigns div.st-campaign-three span.st-campaign-name {
   float: left;
   color: #0f6c71;
   font-weight: 700;
-  max-width: calc(100% - 200px);
+  max-width: calc(100% - 170px);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: white;
+  z-index: 3;
 }
 
 body div.st-right div.st-campaigns div.st-campaign-one span.st-campaign-name:hover,
@@ -693,17 +702,6 @@ body div.st-right div.st-campaigns div.st-campaign-two p,
 body div.st-right div.st-campaigns div.st-campaign-three p {
   margin: 8px 0px 0px 0px;
   color: #a6a6a6;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-body div.st-right div.st-campaigns div.st-campaign-one p:hover,
-body div.st-right div.st-campaigns div.st-campaign-two p:hover,
-body div.st-right div.st-campaigns div.st-campaign-three p:hover {
-  overflow: visible;
-  white-space: normal;
-  height: auto;
 }
 
 body div.st-right div.st-campaigns div.st-campaign-one p span.st-profile,
@@ -721,13 +719,16 @@ body div.st-right div.st-campaigns div.st-campaign-three p.st-description,
 body div.st-right div.st-campaigns div.st-campaign-three span.st-description {
   height: 45px;
   float: left;
-  position: relative;
+  position: absolute;
+  right: 123px;
   color: #a6a6a6;
   margin: 0px;
-  width: calc(100% - 210px);
+  width: calc(100% - 330px);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: white;
+  z-index: 3;
 }
 
 body div.st-right div.st-campaigns div.st-campaign-one p.st-description:hover,
@@ -744,26 +745,22 @@ body div.st-right div.st-campaigns div.st-campaign-three span.st-description:hov
 body div.st-right div.st-campaigns div.st-campaign-one span.st-ending,
 body div.st-right div.st-campaigns div.st-campaign-two span.st-ending,
 body div.st-right div.st-campaigns div.st-campaign-three span.st-ending {
-  float: left;
-  top: 5px;
   position: relative;
-  color: #00cc00;
+  top: 40px;
   font-weight: 700;
   background-color: white;
-  z-index: 3;
+  color: #00cc00;
 }
 
 body div.st-right div.st-campaigns div.st-campaign-one span.st-ended,
 body div.st-right div.st-campaigns div.st-campaign-two span.st-ended,
 body div.st-right div.st-campaigns div.st-campaign-three span.st-ended {
   position: relative;
-  float: left;
-  top: 5px;
-  position: relative;
+  top: 40px;
   color: red;
   font-weight: 700;
+  z-index: 5;
   background-color: white;
-  z-index: 3;
 }
 
 body div.st-right div.st-campaigns div.st-campaign-one div.st-lightbulb,
@@ -772,7 +769,7 @@ body div.st-right div.st-campaigns div.st-campaign-three div.st-lightbulb {
   float: right;
   font-size: 86px;
   position: relative;
-  bottom: 53px;
+  bottom: 17px;
   -webkit-transform: rotate(320deg);
           transform: rotate(320deg);
   color: #F1F1F1;
@@ -793,7 +790,6 @@ body div.st-right div.st-campaigns div.st-campaign-three span.st-numb {
   float: right;
   left: 37px;
   color: white;
-  bottom: 35px;
   padding: 10px 15px;
   background-color: #17ACB3;
   border-radius: 50%;

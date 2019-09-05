@@ -385,7 +385,8 @@ body
       {
         float: left;
         width: calc(100% - 122px);
-        min-height:118px;
+        height: 118px;
+        overflow: hidden;
         border-right: 1px solid $border-gray;
         border-top: 1px solid $border-gray;
         border-bottom: 1px solid $border-gray;
@@ -596,7 +597,7 @@ body
           float: left;
           color: $blue-text;
           font-weight: 700;
-          max-width: calc(100% - 200px);
+          max-width: calc(100% - 170px);
           @include text-overflow();
           @include break-point(500px)
           {
@@ -607,7 +608,6 @@ body
         {
           margin:8px 0px 0px 0px;
           color: $text-gray;
-          @include text-overflow();
           span.st-profile 
           {
             color: $blue-text;
@@ -619,41 +619,39 @@ body
         p.st-description,
         span.st-description
         {
-          height:45px;
+          height: 45px;
           float: left;
-          position: relative;
-          color: $text-gray;
-          margin:0px;
-          width:calc(100% - 210px);
+          position: absolute;
+          right: 123px;
+          color: #a6a6a6;
+          margin: 0px;
+          width: calc(100% - 330px);
           @include text-overflow();
         }
         span.st-ending 
         {
-          float: left;
-          top: 5px;
           position: relative;
-          color: $green;
+          top: 40px;
           font-weight: 700;
-          background-color:white;
-          z-index:3;
+          background-color: white;
+          color: $green;
+         
         }
         span.st-ended 
-        {
-          position:relative;
-          float: left;
-          top: 5px;
+        {    
           position: relative;
+          top: 40px;
           color: red;
           font-weight: 700;
-          background-color:white;
-          z-index:3;
+          z-index:5;
+          background-color: white;
         }
         div.st-lightbulb 
         {
           float: right;
           font-size: 86px;
           position: relative;
-          bottom: 53px;
+          bottom: 17px;
           transform: rotate(320deg);
           color: #F1F1F1;
           @include break-point(500px)
@@ -667,7 +665,6 @@ body
           float: right;
           left: 37px;
           color: white;
-          bottom: 35px;
           padding: 10px 15px;
           background-color: #17ACB3;
           border-radius: 50%;

@@ -391,7 +391,6 @@ body
         float: left;
         width: calc(100% - 122px);
         height: 118px;
-        overflow: hidden;
         position:relative;
         border-right: 1px solid $border-gray;
         border-top: 1px solid $border-gray;
@@ -405,7 +404,7 @@ body
           }
         span.st-idea-title 
         {
-          font-size: 22px;
+          font-size: 19px;
           padding-left: 5px;
           float: left;
           position:absolute;
@@ -421,6 +420,7 @@ body
           top:9px;
           position:absolute;
           left:5px;
+          font-size:14px;
           color: $text-gray;  
         }
         div.st-right-icons
@@ -428,6 +428,7 @@ body
           width:60px;
           position:absolute;
           right:-16px;
+          font-size:16px;
         }
           p.st-description 
           {
@@ -438,6 +439,7 @@ body
             position: absolute;
             top: 32px;
             left:5px;
+            font-size:14px;
             font-style: italic;
             @include text-overflow();
         }
@@ -471,6 +473,7 @@ body
           margin: 0px;
           width: calc(100% - 60px);
           padding-top: 5px;
+          font-size:14px;
           overflow:hidden;
         }
         p.st-comment 
@@ -478,6 +481,7 @@ body
           float: left;
           color: $text-gray;
           margin: 0px;
+          font-size:14px;
           width: calc(100% - 60px);
         }
       }
@@ -595,7 +599,7 @@ body
         }
         span.st-campaign-name 
         {
-          font-size: 22px;
+          font-size: 19px;
           float: left;
           color: $blue-text;
           font-weight: 700;
@@ -613,6 +617,7 @@ body
           position:absolute;
           width:calc(100% - 72px);
           top: 15px;
+          font-size:14px;
           left: 133px;
           @include text-overflow();
           @include break-point(500px)
@@ -633,6 +638,7 @@ body
           position: absolute;
           color: #a6a6a6;
           margin: 0px;
+          font-size:14px;
           top: 40px;
           left:133px;
           width: calc(100% - 205px);
@@ -648,15 +654,24 @@ body
           position: absolute;
           top: 100px;
           font-weight: 700;
+          font-size:14px;
           color: $green;
-         
+         @include break-point(750px)
+         {
+           top:80px;
+         }
         }
         span.st-ended 
         {    
           position: absolute;
           top: 100px;
           font-weight: 700;
+          font-size:14px;
           color: red;
+          @include break-point(750px)
+          {
+            top:82px;
+          }
         }
         div.st-lightbulb 
         {
@@ -694,6 +709,7 @@ body
         background-color: $blue;
         border-radius: 5px;
         margin-top: 5px;
+        position:relative;
         span.st-number 
         {
           float: left;
@@ -732,30 +748,9 @@ body
           float: right;
           font-size:60px;
           color: white;
-          position:relative;
-          top:33px;
-
-          @include break-point(513px)
-          {
-            top:5px;
-          }
-          @include break-point(496px)
-          {
-            top:32px;
-          }
-          @include break-point(437px)
-          {
-            top:13px;
-          }
-          @include break-point(424px)
-          {
-            position:relative;
-            bottom:20px;
-          }
-          @include break-point(437px)
-          {
-            top:13px;
-          }
+          position:absolute;
+          top:31px;
+          right:10px;
         }
         i.sbullseye 
         {
@@ -823,6 +818,12 @@ body
           {
             font-size:14px;
           }
+          @include break-point (415px)
+          {
+            gap:2px;
+            width:100%;
+            padding:0px;
+          }
           span 
           {
             top: 10px;
@@ -877,13 +878,13 @@ body
           margin-top: 5px;
           span.st-idea-title 
           {
-            font-size: 22px;
             padding-left: 5px;
             float: left;
             position:absolute;
             color: $blue-text;
             top:5px;
             left:5px;
+            font-size:19px;
             font-weight: 600;
             width: calc(100% - 55px);
             @include text-overflow();
@@ -893,6 +894,7 @@ body
               width:60px;
               position:absolute;
               right:-16px;
+              font-size:16px;
             }
           span.st-description 
           {
@@ -900,7 +902,12 @@ body
             position:absolute;
             top:30px;
             left:10px;
-            @include text-overflow();
+            font-size:14px;
+            width:calc(100% - 15px);
+            @include break-point(850px)
+            {
+              @include text-overflow();
+            }
             span.st-profile 
             {
               color: $blue-text;
@@ -912,6 +919,7 @@ body
             margin-left: 5px;
             color: $text-gray;
             max-height: 60px;
+            font-size:14px;
             float:left;
             margin-bottom: 5px;
             position:absolute;

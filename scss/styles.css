@@ -327,8 +327,8 @@ body div.add-idea {
 }
 
 body div.new-idea {
-  background-color: #00cc00;
-  color: #00cc00;
+  background-color: #76cc4e;
+  color: #76cc4e;
 }
 
 body div.st-main-content {
@@ -379,7 +379,7 @@ body div.st-left div.st-idea {
 }
 
 body div.st-left div.st-idea span.st-profile {
-  color: #0f6c71;
+  color: #296275;
   font-weight: 700;
 }
 
@@ -442,7 +442,7 @@ body div.st-left div.st-idea div.st-idea-desc span.st-idea-title {
   padding-left: 5px;
   float: left;
   position: absolute;
-  color: #0f6c71;
+  color: #296275;
   font-weight: 600;
   right: 50px;
   height: 30px;
@@ -668,7 +668,7 @@ body div.st-right div.st-campaigns div.st-campaign-two span.st-campaign-name,
 body div.st-right div.st-campaigns div.st-campaign-three span.st-campaign-name {
   font-size: 22px;
   float: left;
-  color: #0f6c71;
+  color: #296275;
   font-weight: 700;
   max-width: calc(100% - 170px);
   overflow: hidden;
@@ -739,7 +739,7 @@ body div.st-right div.st-campaigns div.st-campaign-three p.st-info:hover {
 body div.st-right div.st-campaigns div.st-campaign-one p.st-info span.st-profile,
 body div.st-right div.st-campaigns div.st-campaign-two p.st-info span.st-profile,
 body div.st-right div.st-campaigns div.st-campaign-three p.st-info span.st-profile {
-  color: #0f6c71;
+  color: #296275;
   font-weight: 700;
 }
 
@@ -788,7 +788,7 @@ body div.st-right div.st-campaigns div.st-campaign-three span.st-ending {
   position: absolute;
   top: 100px;
   font-weight: 700;
-  color: #00cc00;
+  color: #76cc4e;
 }
 
 body div.st-right div.st-campaigns div.st-campaign-one span.st-ended,
@@ -1054,7 +1054,7 @@ body div.st-right div.st-all-ideas div.st-activity div.st-thumbnail-text span.st
   padding-left: 5px;
   float: left;
   position: absolute;
-  color: #0f6c71;
+  color: #296275;
   top: 5px;
   left: 5px;
   font-weight: 600;
@@ -1107,7 +1107,7 @@ body div.st-right div.st-all-ideas div.st-activity div.st-thumbnail-text span.st
 }
 
 body div.st-right div.st-all-ideas div.st-activity div.st-thumbnail-text span.st-description span.st-profile {
-  color: #0f6c71;
+  color: #296275;
   font-weight: 600;
 }
 
@@ -1236,7 +1236,7 @@ body div.st-right div.st-top-contributors div.st-first div.st-username {
 }
 
 body div.st-right div.st-top-contributors div.st-first div.st-username span.st-profile {
-  color: #0f6c71;
+  color: #296275;
   font-size: 22px;
   font-weight: 600;
 }
@@ -1283,7 +1283,7 @@ body div.st-right div.st-top-contributors div.st-first div.st-status span.st-sta
   text-align: center;
   width: 100%;
   float: left;
-  color: #0f6c71;
+  color: #296275;
   font-size: 28px;
 }
 
@@ -1411,7 +1411,7 @@ body div.st-right div.st-top-contributors div.st-others div.st-username {
 }
 
 body div.st-right div.st-top-contributors div.st-others div.st-username span.st-profile {
-  color: #0f6c71;
+  color: #296275;
   font-size: 22px;
   font-weight: 600;
 }
@@ -1450,7 +1450,7 @@ body div.st-right div.st-top-contributors div.st-others div.st-status div.st-sta
   bottom: 15px;
   position: relative;
   float: left;
-  color: #0f6c71;
+  color: #296275;
   font-size: 22px;
 }
 

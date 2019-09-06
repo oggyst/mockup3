@@ -1,4 +1,5 @@
 body {
+  font-family: Arial, Helvetica, sans-serif;
   min-width: 400px;
   margin: 0px;
   padding: 0px;
@@ -17,7 +18,7 @@ body div.st-header {
 }
 
 body span.st-left-header {
-  margin-left: 15px;
+  margin-left: 25px;
   color: white;
   line-height: 100%;
   float: left;
@@ -28,7 +29,7 @@ body span.st-left-header {
   transform: translateY(-50%);
 }
 
-@media (max-width: 490px) {
+@media (max-width: 515px) {
   body span.st-left-header {
     display: none;
   }
@@ -38,11 +39,12 @@ body span.st-right-header {
   font-size: 25px;
   margin-right: 15px;
   float: right;
+  min-width: 328px;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 515px) {
   body span.st-right-header {
-    margin: auto;
+    margin-right: calc((100% - 328px) / 2);
     position: relative;
   }
 }
@@ -74,12 +76,18 @@ body span.st-right-header i.fa-bell::after {
   height: 15px;
   width: 15px;
   top: 8px;
-  right: 255px;
+  right: 275px;
   text-align: center;
   font-size: 10px;
   line-height: 10px;
   border-radius: 50%;
   color: white;
+}
+
+@media (max-width: 515px) {
+  body span.st-right-header i.fa-bell::after {
+    right: 262px;
+  }
 }
 
 body div.st-vertical {
@@ -120,7 +128,7 @@ body div.st-vertical div.st-settings {
 }
 
 body div.st-ideas {
-  width: calc(100% - 80px);
+  width: calc(100% - 104px);
   float: left;
   position: relative;
   top: 50px;
@@ -128,7 +136,7 @@ body div.st-ideas {
   line-height: 40px;
   border-bottom: 1px solid #F1F1F1;
   margin-top: 5px;
-  margin-left: 50px;
+  margin-left: 60px;
   height: 35px;
 }
 
@@ -164,7 +172,7 @@ body div.st-ideas-status {
   position: relative;
   width: calc(100% - 105px);
   gap: 10px;
-  margin: 25px 65px;
+  margin: 25px 76px;
 }
 
 @media (max-width: 850px) {
@@ -337,9 +345,9 @@ body div.st-main-content {
   -ms-grid-columns: (50%)[2];
       grid-template-columns: repeat(2, 50%);
   float: left;
-  width: calc(100% - 105px);
+  width: calc(100% - 111px);
   gap: 10px;
-  margin: 25px 65px;
+  margin: 25px 76px;
 }
 
 @media (max-width: 1460px) {
@@ -486,6 +494,7 @@ body div.st-left div.st-idea div.st-idea-desc p.st-description {
   position: absolute;
   top: 32px;
   left: 5px;
+  font-style: italic;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

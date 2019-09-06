@@ -728,14 +728,27 @@ body
           color: white;
           position:relative;
           top:33px;
+
           @include break-point(513px)
           {
             top:5px;
+          }
+          @include break-point(496px)
+          {
+            top:32px;
+          }
+          @include break-point(437px)
+          {
+            top:13px;
           }
           @include break-point(424px)
           {
             position:relative;
             bottom:20px;
+          }
+          @include break-point(437px)
+          {
+            top:13px;
           }
         }
         i.sbullseye 

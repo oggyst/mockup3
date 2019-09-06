@@ -14,12 +14,15 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  background-color:white;
   z-index:3;
   &:hover
   {
-    overflow: visible; 
+    border: 1px solid #eee;
+    padding:2px;
     white-space: normal;
-    height:auto;
+    word-break: break-word;
+    z-index:5;
+    background-color:white;
+    height:fit-content;
   }
 }

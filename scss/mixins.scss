@@ -3,6 +3,11 @@
     @content;
   }
 }
+@mixin break-point-h($resolution) {
+  @media (max-height: $resolution) {
+    @content;
+  }
+}
 @mixin vertical-center {
   position: relative;
   top: 50%;
@@ -22,7 +27,7 @@
     white-space: normal;
     word-break: break-word;
     z-index:5;
-    background-color:white;
+    background-color:#eee;
     height:fit-content;
   }
 }

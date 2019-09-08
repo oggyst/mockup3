@@ -15,6 +15,7 @@ body
     float: left;
     top: 0;
     width: calc(100% - 50px);
+    min-width:333px;  
     height: 50px;
     z-index: 5;
     background-color: $blue;
@@ -27,7 +28,7 @@ body
     float: left;
     font-size: 25px;
     @include vertical-center();
-    @include break-point(515px) 
+    @include break-point(532px) 
     {
       display: none;
     }
@@ -35,10 +36,10 @@ body
   span.st-right-header 
   {
     font-size: 25px;
-    margin-right: 15px;
+    margin-right: 25px;
     float: right;
     min-width: 328px;
-    @include break-point(515px) 
+    @include break-point(532px) 
     {
       margin-right:calc((100% - 328px) / 2);
       position:relative;
@@ -69,13 +70,13 @@ body
       height: 15px;
       width: 15px;
       top: 8px;
-      right: 275px;
+      right: 283px;
       text-align: center;
       font-size: 10px;
       line-height: 10px;
       border-radius: 50%;
       color: white;
-      @include break-point(515px) 
+      @include break-point(532px) 
       {
         right:262px;
       }
@@ -84,7 +85,6 @@ body
   div.st-vertical 
   {
     height: 100vh;
-    min-height:465px;
     width: 50px;
     float: left;
     background-color: $black;
@@ -94,6 +94,10 @@ body
     color: $gray;
     z-index:5;
     top: 0;
+    @include break-point-h(465px)
+    {
+      font-size:22px;
+    }
     span.st-selected 
     {
       padding: 5px;
@@ -115,7 +119,11 @@ body
     {
       position: absolute;
       bottom: 5px;
-      left: 5px;
+      left: 10px;
+      @include break-point-h(465px)
+      {
+        left: 14px;
+      }
     }
   }
   div.st-ideas 
@@ -355,12 +363,23 @@ body
       margin: 0px 15px;
       div.st-photo 
       {
+        width: 120px;
+          height: 120px;
+          float: left;
+          margin-bottom: 5px;
+          @include break-point(500px)
+          {
+            height:50px;
+            width:50px;
+            padding-bottom:70px;
+            border-left: 1px solid $border-gray;
+            border-bottom: 1px solid $border-gray;
+          }
         img 
         {
           width: 120px;
           height: 120px;
           float: left;
-          margin-bottom: 5px;
           @include break-point(500px)
           {
             height:50px;
@@ -369,12 +388,11 @@ body
         }
         i 
         {
-          width: 120px;
-          height: 120px;
           float: left;
           font-size: 55px;
           line-height: 120px;
           text-align: center;
+          width:120px;
           background-color: #929397;
           margin-bottom: 5px;
           @include break-point(500px)
@@ -383,6 +401,7 @@ body
             font-size:30px;
             line-height: 50px;
             width:50px;
+            margin-bottom:70px;
           }
         }
       }
@@ -398,9 +417,9 @@ body
         @include break-point(500px)
           {
             width: calc(100% - 52px);
-            height:50px;
-            min-height: 50px;
-            overflow: hidden;
+            // height:50px;
+            // min-height: 50px;
+            // overflow: hidden;
           }
         span.st-idea-title 
         {
@@ -656,10 +675,16 @@ body
           font-weight: 700;
           font-size:14px;
           color: $green;
-         @include break-point(750px)
-         {
-           top:80px;
-         }
+          @include break-point(750px)
+          {
+            top:100px;
+            left:135px;
+          }
+          @include break-point(500px)
+          {
+            top:82px;
+            left:65px;
+          }
         }
         span.st-ended 
         {    
@@ -670,7 +695,13 @@ body
           color: red;
           @include break-point(750px)
           {
+            top:100px;
+            left:135px;
+          }
+          @include break-point(500px)
+          {
             top:82px;
+            left:65px;
           }
         }
         div.st-lightbulb 
